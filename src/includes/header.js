@@ -11,7 +11,7 @@ export default class Header extends Component {
             <div className="marginContainer">
                 <section className="header">
                     <ul className="logoMenu">
-                        <li><i class="fas fa-pizza-slice"></i></li>
+                        <li><i className="fas fa-pizza-slice"></i></li>
                         <li>Menu</li>
                         <li>Catering</li>
                         <li>Store</li>

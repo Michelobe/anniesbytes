@@ -5,6 +5,10 @@
     grid-template-columns: 1fr 1.5fr;
     font-size: .8rem;
     padding: .5rem 0;
+    text-transform: capitalize;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
     /* padding: 1rem 0; */
     /* line-height: 3.5; NOT NEEDED, FONT-AWESOME ICON WILL NOT CENTER. THERE
     ARE OTHER OPTIONS, BUT ITS EASIER TO USE PADDING INSTEAD */
