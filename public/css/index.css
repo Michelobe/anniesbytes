@@ -1,31 +1,18 @@
+
+@import "reset.css";
+@import "includes/header.css";
+@import "components/jumboScreen.css";
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
 
-.soon{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    font-size: 2rem;
-    letter-spacing: .1rem;
+.outerContainer{
+    background: black;
 }
-.soon .topSection{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-}
-.soon .topSection h1{
-    text-decoration: underline;
-    margin: 0 1rem 0 0;
-}
-.soon .topSection i{
-    color: red;
-    font-size: 4rem;
+.marginContainer{
+    max-width: 1200px;
+    margin: auto;
 }

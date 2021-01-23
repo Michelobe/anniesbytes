@@ -1,0 +1,10 @@
+.outerContainer .marginContainer .jumboScreen{
+    background: blue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.outerContainer .marginContainer .jumboScreen .jumboInfo img{
+    background: transparent;
+    max-width: 100%;
+}

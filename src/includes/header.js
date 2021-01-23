@@ -8,14 +8,21 @@ export default class Header extends Component {
 
     render() {
         return (
-            <div>
-                <div className="soon">
-                    <div className="topSection">
-                        <h1>Annie's Bytes</h1>
-                        <i class="fas fa-pizza-slice"></i>
-                    </div>
-                    <p>Coming Soon!</p>
-                </div>
+            <div className="marginContainer">
+                <section className="header">
+                    <ul className="logoMenu">
+                        <li><i class="fas fa-pizza-slice"></i></li>
+                        <li>Menu</li>
+                        <li>Catering</li>
+                        <li>Store</li>
+                        <li>Gift Cards</li>
+                    </ul>
+                    <ul className="orderMenu">
+                        <li>Pickup</li>
+                        <li>Delivery</li>
+                        <li>Reserve</li>
+                    </ul>
+                </section>
             </div>
         );
     }
