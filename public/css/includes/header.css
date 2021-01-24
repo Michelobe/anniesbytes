@@ -1,4 +1,4 @@
-.outerContainer .marginContainer #header{
+ .marginContainer #header{
     background: black;
     color: white;
     display: grid;
@@ -11,32 +11,32 @@
     width: 100%;
     z-index: 100;
 }
-.outerContainer .marginContainer #header .logoMenu{
+ .marginContainer #header .logoMenu{
     background: black;
     color: white;
     display: flex;
     flex-flow: row;
     justify-content: space-around;
 }
-.outerContainer .marginContainer #header .logoMenu li{
+ .marginContainer #header .logoMenu li{
     padding: 1rem;
     display: flex;
     align-items: center;
 }
-.outerContainer .marginContainer #header .logoMenu li:hover{
+ .marginContainer #header .logoMenu li:hover{
     cursor: pointer;
 }
-.outerContainer .marginContainer #header .logoMenu li:nth-child(1){
+ .marginContainer #header .logoMenu li:nth-child(1){
     font-size: 1.5rem;
 }
-.outerContainer .marginContainer #header .orderMenu{
+ .marginContainer #header .orderMenu{
     background: black;
     color: white;
     display: flex;
     flex-flow: row;
     justify-content: flex-end;
 }
-.outerContainer .marginContainer #header .orderMenu li{
+ .marginContainer #header .orderMenu li{
     margin: .5rem .25rem;
     padding: 0 1.5rem;
     display: flex;
@@ -45,7 +45,7 @@
     border-radius: 50px;
     /* font-size: 1rem; */
 }
-.outerContainer .marginContainer #header .orderMenu li:hover{
+ .marginContainer #header .orderMenu li:hover{
     cursor: pointer;
     background:  rgb(240,129,26);
     color: white;

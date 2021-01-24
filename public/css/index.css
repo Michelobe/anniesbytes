@@ -4,6 +4,7 @@
 @import "components/jumboScreen.css";
 @import "components/cuisineDisplay.css";
 @import "components/portrayal.css";
+@import "components/mapSection.css";
 
 body {
   margin: 0;
@@ -11,16 +12,26 @@ body {
   font-family: sans-serif;
 }
 
-.outerContainer{
+/* === THIS IS TO MAKE BACKGROUND BLACK AND SPAN THE WIDTH OF THE SCREEN === */
+.blackContainer{
     background: black;
 }
+/* ======================================================================= */
+
+
+/* === THIS IS THE MAIN CONTAINER KEEPING INFORMATION LESS THAN 1200PX === */
 .marginContainer{
     max-width: 1200px;
     margin: auto;
     position: relative;
 }
-.cuisineContainer{
+/* ======================================================================= */
+
+
+/* === THIS IS TO MAKE BACKGROUND WHITE AND SPAN THE WIDTH OF THE SCREEN === */
+.whiteContainer{
     width: 100vw;
     background: white;
     margin: 0 auto;
 }
+/* ======================================================================= */

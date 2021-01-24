@@ -38,6 +38,7 @@
     background-size: cover;
 }
 .marginContainer #cuisineDisplay .bookTableBtn{
+    text-align: center;
     color: white;
     background: black;
     padding: 1rem 0;

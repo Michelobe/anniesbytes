@@ -1,0 +1,54 @@
+.whiteContainer .marginContainer #mapSection{
+    text-align: left;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+/* =================== LEFT SIDE FLEXBOX ======================== */
+.whiteContainer .marginContainer #mapSection .locationInfo{
+    width: 100%;
+}
+.whiteContainer .marginContainer #mapSection .locationInfo h1{
+    font-size: 2.2rem;
+    margin: 1rem 0;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 1rem 6rem;
+}
+.whiteContainer .marginContainer #mapSection .locationInfo p{
+   font-size: 1.25rem;
+   letter-spacing: 1px;
+   line-height: 1.25;
+   text-align: left;
+   margin: 1rem 6rem;
+}
+.whiteContainer .marginContainer #mapSection .locationInfo .readMoreBtn{
+    text-align: center;
+    color: white;
+    background: black;
+    padding: 1rem 0;
+    width: 10rem;
+    margin: 1rem 6rem;
+    transition: all .3s ease-in-out;
+}
+.whiteContainer .marginContainer #mapSection .locationInfo .readMoreBtn:hover{
+    cursor: pointer;
+    background: gray;
+    color: white;
+}
+
+/* =================== RIGHT SIDE FLEXBOX ======================== */
+.whiteContainer .marginContainer #mapSection .mapArea{
+    width: 100%;
+}
+.whiteContainer .marginContainer #mapSection .mapArea .mapContainer{
+    width: 30rem;
+    height: 30rem;
+    margin: 0 auto;
+}
+.whiteContainer .marginContainer #mapSection .mapArea .mapContainer img{
+    max-width: 100%;
+}

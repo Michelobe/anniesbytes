@@ -3,6 +3,7 @@ import Header from "./includes/header.js";
 import JumboScreen from "./components/jumboScreen.js";
 import Cuisine from "./components/cuisineDisplay.js";
 import Portrayal from "./components/portrayal.js";
+import Map from "./components/mapSection.js";
 
 class App extends Component {
 	constructor() {
@@ -12,15 +13,18 @@ class App extends Component {
   render() {
     return (
         <div>
-            <div className="outerContainer">
+            <div className="blackContainer">
                 <Header />
                 <JumboScreen />
             </div>
-            <div className="cuisineContainer">
+            <div className="whiteContainer">
                 <Cuisine />
             </div>
             <div className="portrayalContainer">
                 <Portrayal />
+            </div>
+            <div className="whiteContainer">
+                <Map />
             </div>
         </div>
     );
