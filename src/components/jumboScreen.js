@@ -8,7 +8,7 @@ export default class JumboScreen extends Component {
     render() {
         return(
             <div className="marginContainer">
-                <section className="jumboScreen">
+                <section id="jumboScreen">
                     <div className="jumboLeft">
                         <div className="jumboImg">
                         </div>

@@ -9,7 +9,7 @@ export default class Header extends Component {
     render() {
         return (
             <div className="marginContainer">
-                <section className="header">
+                <section id="header">
                     <ul className="logoMenu">
                         <li><i className="fas fa-pizza-slice"></i></li>
                         <li>Menu</li>

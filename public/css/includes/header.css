@@ -1,44 +1,42 @@
-.outerContainer .marginContainer .header{
+.outerContainer .marginContainer #header{
     background: black;
     color: white;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     font-size: .8rem;
+    letter-spacing: 1px;
     padding: .5rem 0;
     text-transform: capitalize;
     position: absolute;
     width: 100%;
     z-index: 100;
-    /* padding: 1rem 0; */
-    /* line-height: 3.5; NOT NEEDED, FONT-AWESOME ICON WILL NOT CENTER. THERE
-    ARE OTHER OPTIONS, BUT ITS EASIER TO USE PADDING INSTEAD */
 }
-.outerContainer .marginContainer .logoMenu{
+.outerContainer .marginContainer #header .logoMenu{
     background: black;
     color: white;
     display: flex;
     flex-flow: row;
     justify-content: space-around;
 }
-.outerContainer .marginContainer .logoMenu li{
+.outerContainer .marginContainer #header .logoMenu li{
     padding: 1rem;
     display: flex;
     align-items: center;
 }
-.outerContainer .marginContainer .logoMenu li:hover{
+.outerContainer .marginContainer #header .logoMenu li:hover{
     cursor: pointer;
 }
-.outerContainer .marginContainer .logoMenu li:nth-child(1){
+.outerContainer .marginContainer #header .logoMenu li:nth-child(1){
     font-size: 1.5rem;
 }
-.outerContainer .marginContainer .orderMenu{
+.outerContainer .marginContainer #header .orderMenu{
     background: black;
     color: white;
     display: flex;
     flex-flow: row;
     justify-content: flex-end;
 }
-.outerContainer .marginContainer .orderMenu li{
+.outerContainer .marginContainer #header .orderMenu li{
     margin: .5rem .25rem;
     padding: 0 1.5rem;
     display: flex;
@@ -47,9 +45,9 @@
     border-radius: 50px;
     /* font-size: 1rem; */
 }
-.outerContainer .marginContainer .orderMenu li:hover{
-    background: white;
-    border: 1px orange solid;
-    color: black;
-    transition: all .5s ease-in-out;
+.outerContainer .marginContainer #header .orderMenu li:hover{
+    cursor: pointer;
+    background:  rgb(240,129,26);
+    color: white;
+    transition: all .3s ease-in-out;
 }

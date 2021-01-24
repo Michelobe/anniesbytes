@@ -2,6 +2,8 @@
 @import "reset.css";
 @import "includes/header.css";
 @import "components/jumboScreen.css";
+@import "components/cuisineDisplay.css";
+@import "components/portrayal.css";
 
 body {
   margin: 0;
@@ -16,4 +18,9 @@ body {
     max-width: 1200px;
     margin: auto;
     position: relative;
+}
+.cuisineContainer{
+    width: 100vw;
+    background: white;
+    margin: 0 auto;
 }

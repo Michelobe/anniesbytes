@@ -1,0 +1,52 @@
+ .marginContainer #cuisineDisplay{
+    color: black;
+    text-align: center;
+    background: white;
+    padding: 4rem 0;
+}
+ .marginContainer #cuisineDisplay h1{
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0 0 3rem 0;
+}
+ .marginContainer #cuisineDisplay .cuisineMenu{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+ .marginContainer #cuisineDisplay .cuisineMenu .cuisineLi h1{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+ .marginContainer #cuisineDisplay .cuisineMenu .cuisineLi .cuisinePic{
+    height: 20rem;
+    width: 20rem;
+    margin: 0 0 2rem 0;
+}
+ .marginContainer #cuisineDisplay .cuisineMenu .cuisineLi .menuPic{
+    background: url("https://www.jessicagavin.com/wp-content/uploads/2018/06/ribeye-steak-with-red-wine-sauce-3-1200-500x500.jpg") center center no-repeat;
+    background-size: cover;
+}
+ .marginContainer #cuisineDisplay .cuisineMenu .cuisineLi .storePic{
+    background: url("https://www.dinneratthezoo.com/wp-content/uploads/2019/02/salmon-salad-4.jpg") center center no-repeat;
+    background-size: cover;
+}
+ .marginContainer #cuisineDisplay .cuisineMenu .cuisineLi .cateringPic{
+    background: url("https://www.shemazing.net/wp-content/uploads/2014/03/party-food-656x440.jpg") center center no-repeat;
+    background-size: cover;
+}
+.marginContainer #cuisineDisplay .bookTableBtn{
+    color: white;
+    background: black;
+    padding: 1rem 0;
+    width: 10rem;
+    margin: 0 auto;
+    transition: all .3s ease-in-out;
+}
+.marginContainer #cuisineDisplay .bookTableBtn:hover{
+    cursor: pointer;
+    background:  rgb(240,129,26);
+    color: white;
+}

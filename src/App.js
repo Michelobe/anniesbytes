@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Header from "./includes/header.js";
 import JumboScreen from "./components/jumboScreen.js";
+import Cuisine from "./components/cuisineDisplay.js";
+import Portrayal from "./components/portrayal.js";
 
 class App extends Component {
 	constructor() {
@@ -9,9 +11,17 @@ class App extends Component {
     }
   render() {
     return (
-        <div className="outerContainer">
-            <Header />
-            <JumboScreen />
+        <div>
+            <div className="outerContainer">
+                <Header />
+                <JumboScreen />
+            </div>
+            <div className="cuisineContainer">
+                <Cuisine />
+            </div>
+            <div className="portrayalContainer">
+                <Portrayal />
+            </div>
         </div>
     );
   }
