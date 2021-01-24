@@ -7,7 +7,9 @@ export default class Portrayal extends Component {
     }
     render() {
         return(
-            <div className="portrayalSect"></div>
+            <div className="portrayalContainer">
+                <div className="portrayalSect"></div>
+            </div>
         );
     }
 }

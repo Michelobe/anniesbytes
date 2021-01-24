@@ -1,0 +1,32 @@
+.takeItContainer{
+    background: red;
+}
+.takeItContainer .marginContainer{
+    text-align: center;
+    padding: 4rem 0;
+}
+.takeItContainer .marginContainer h2{
+    padding: 0 0 1rem 0;
+}
+.takeItContainer .marginContainer h1{
+    padding: 0 0 1rem 0;
+}
+.takeItContainer .marginContainer .btnContainer{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+.takeItContainer .marginContainer .btnContainer .takeBtn{
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    border: 2px solid white;
+    border-radius: 15px;
+    transition: all .3s ease-in-out;
+}
+.takeItContainer .marginContainer .btnContainer .takeBtn:hover{
+    cursor: pointer;
+    background:  rgb(240,129,26);
+    color: white;
+}

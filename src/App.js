@@ -4,6 +4,9 @@ import JumboScreen from "./components/jumboScreen.js";
 import Cuisine from "./components/cuisineDisplay.js";
 import Portrayal from "./components/portrayal.js";
 import Map from "./components/mapSection.js";
+import Beer from "./components/beerSection.js";
+import Reviews from "./components/reviewSection.js";
+import TakeIt from "./components/takeItHome.js";
 
 class App extends Component {
 	constructor() {
@@ -20,12 +23,15 @@ class App extends Component {
             <div className="whiteContainer">
                 <Cuisine />
             </div>
-            <div className="portrayalContainer">
-                <Portrayal />
-            </div>
+            <Portrayal />
             <div className="whiteContainer">
                 <Map />
+                <Beer />
             </div>
+            <div className="blackContainer">
+                <Reviews />
+            </div>
+            <TakeIt />
         </div>
     );
   }

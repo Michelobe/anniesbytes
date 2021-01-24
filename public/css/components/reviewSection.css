@@ -1,0 +1,49 @@
+.blackContainer .marginContainer #reviewSection{
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    padding: 3rem 0;
+}
+.blackContainer .marginContainer #reviewSection h1{
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+}
+.blackContainer .marginContainer #reviewSection .boxContainer{
+    color: white;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 1.5rem 0 0 0;
+}
+.blackContainer .marginContainer #reviewSection .boxContainer .reviewCompanyBox{
+    width: 10rem;
+    height: 10rem;
+}
+.blackContainer .marginContainer #reviewSection .boxContainer .reviewCompanyBox.boxOne{
+    width: 10rem;
+    height: 10rem;
+    background: url("https://lh3.googleusercontent.com/proxy/l2dULAIQF_nH6e0xCOlaLgzRL471Z9QCM1EcegY2PWMMdi68tUX-6mDGH-vyihTvJDc-vGbzw5YriIx66o144L1etJDRWlZXKSEBdgJsQ2gpeRaTdYefNas32gCJQoltenKmGM4UwREiFP1V6jEjmZo") center center no-repeat;
+    background-size: contain;
+}
+.blackContainer .marginContainer #reviewSection .boxContainer .reviewCompanyBox.boxTwo{
+    width: 10rem;
+    height: 10rem;
+    background: url("https://cdn.vox-cdn.com/uploads/chorus_asset/file/13551805/EaterAwards_RecircSquare__1_.png") center center no-repeat;
+    background-size: contain;
+}
+.blackContainer .marginContainer #reviewSection .boxContainer .reviewCompanyBox.boxThree{
+    width: 10rem;
+    height: 10rem;
+    background: url("https://samuelslaw.com/wp-content/uploads/2016/06/2016-best-of.png") center center no-repeat;
+    background-size: contain;
+}
+.blackContainer .marginContainer #reviewSection .boxContainer .reviewCompanyBox.boxFour{
+    width: 10rem;
+    height: 10rem;
+    background: url("https://media-cdn.tripadvisor.com/media/photo-s/13/be/8d/44/winner-of-world-luxury.jpg") center center no-repeat;
+    background-size: 100%;
+}
