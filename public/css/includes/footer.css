@@ -1,0 +1,47 @@
+.blackContainer .marginContainer #footContainer{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+.blackContainer .marginContainer #footContainer .companyInfoContainer{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 3rem 0;
+}
+.blackContainer .marginContainer #footContainer .companyInfoContainer table{
+    letter-spacing: 1px;
+}
+.blackContainer .marginContainer #footContainer .companyInfoContainer table tr th{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+.blackContainer .marginContainer #footContainer .companyInfoContainer table tr td{
+    font-size: 1rem;
+    padding-bottom: .5rem;
+}
+.blackContainer .marginContainer #footContainer .companyInfoContainer table tr td a{
+    text-decoration: none;
+    color: white;
+}
+
+.blackContainer .marginContainer #footContainer .signOff{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: .5rem;
+}
+.blackContainer .marginContainer #footContainer .social{
+    font-size: 2rem;
+}
+.blackContainer .marginContainer #footContainer .social a{
+    color: white;
+    text-decoration: none;
+}
+.blackContainer .marginContainer #footContainer .social .fab{
+    padding: 0 .5rem;
+}

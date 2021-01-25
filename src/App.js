@@ -7,6 +7,7 @@ import Map from "./components/mapSection.js";
 import Beer from "./components/beerSection.js";
 import Reviews from "./components/reviewSection.js";
 import TakeIt from "./components/takeItHome.js";
+import Footer from "./includes/footer.js";
 
 class App extends Component {
 	constructor() {
@@ -32,6 +33,9 @@ class App extends Component {
                 <Reviews />
             </div>
             <TakeIt />
+            <div className="blackContainer">
+                <Footer />
+            </div>
         </div>
     );
   }

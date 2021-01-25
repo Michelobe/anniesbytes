@@ -9,13 +9,15 @@ export default class TakeIt extends Component{
     render(){
         return(
             <div className="takeItContainer">
-                <div className="marginContainer">
-                    <h2>Take it home</h2>
-                    <h1>We Deliver</h1>
-                    <div className="btnContainer">
-                        <div className="takeBtn">Delivery</div>
-                        <div className="takeBtn middleBtn">Pickup</div>
-                        <div className="takeBtn">Catering</div>
+                <div className="whiteOverlay">
+                    <div className="marginContainer">
+                        <h2>Take it home</h2>
+                        <h1>We Deliver</h1>
+                        <div className="btnContainer">
+                            <div className="takeBtn">Delivery</div>
+                            <div className="takeBtn middleBtn">Pickup</div>
+                            <div className="takeBtn">Catering</div>
+                        </div>
                     </div>
                 </div>
             </div>

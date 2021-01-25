@@ -8,6 +8,7 @@
 @import "components/beerSection.css";
 @import "components/reviewSection.css";
 @import "components/takeItHome.css";
+@import "includes/footer.css";
 
 body {
   margin: 0;

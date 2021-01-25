@@ -1,31 +1,44 @@
 .takeItContainer{
-    background: red;
+    background: url("https://images.squarespace-cdn.com/content/v1/5c5c3833840b161566b02a76/1573133725500-Y5PCN0V04I86HDAT8AT0/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/WBC_7095.jpg?format=2500w") center center no-repeat;
 }
-.takeItContainer .marginContainer{
-    text-align: center;
+.takeItContainer .whiteOverlay{
+    height: 100%;
+    background: rgba(255, 255, 255, 0.301);
     padding: 4rem 0;
 }
-.takeItContainer .marginContainer h2{
-    padding: 0 0 1rem 0;
+.takeItContainer .whiteOverlay .marginContainer{
+    text-align: center;
+    padding: 4rem 0;
+    color: black;
 }
-.takeItContainer .marginContainer h1{
+.takeItContainer .whiteOverlay .marginContainer h2{
     padding: 0 0 1rem 0;
+    font-size: 3rem;
+    letter-spacing: 1px;
 }
-.takeItContainer .marginContainer .btnContainer{
+.takeItContainer .whiteOverlay .marginContainer h1{
+    padding: 0 0 1rem 0;
+    font-size: 8rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.takeItContainer .whiteOverlay .marginContainer .btnContainer{
     display: flex;
     flex-flow: row;
     justify-content: center;
 }
-.takeItContainer .marginContainer .btnContainer .takeBtn{
+.takeItContainer .whiteOverlay .marginContainer .btnContainer .takeBtn{
+    color: white;
     font-size: 2.2rem;
     letter-spacing: 1px;
     padding: 1rem 2rem;
     margin-top: 3rem;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 15px;
     transition: all .3s ease-in-out;
+    margin: 2rem 1rem 0 1rem;
 }
-.takeItContainer .marginContainer .btnContainer .takeBtn:hover{
+.takeItContainer .whiteOverlay .marginContainer .btnContainer .takeBtn:hover{
     cursor: pointer;
     background:  rgb(240,129,26);
     color: white;
