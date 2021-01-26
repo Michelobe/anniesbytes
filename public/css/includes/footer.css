@@ -1,15 +1,15 @@
 .blackContainer .marginContainer #footContainer{
     display: flex;
     flex-flow: column;
-    text-align: center;
+    text-align: left;
 }
 .blackContainer .marginContainer #footContainer .companyInfoContainer{
     display: flex;
     flex-flow: row;
     justify-content: space-around;
     color: white;
-    border-bottom: 1px solid white;
     padding: 3rem 0;
+    margin: 0 12rem;
 }
 .blackContainer .marginContainer #footContainer .companyInfoContainer table{
     letter-spacing: 1px;
@@ -17,10 +17,12 @@
 .blackContainer .marginContainer #footContainer .companyInfoContainer table tr th{
     font-size: 2rem;
     padding-bottom: 1rem;
+    text-decoration: underline;
 }
 .blackContainer .marginContainer #footContainer .companyInfoContainer table tr td{
     font-size: 1rem;
     padding-bottom: .5rem;
+    font-size: .9rem;
 }
 .blackContainer .marginContainer #footContainer .companyInfoContainer table tr td a{
     text-decoration: none;
@@ -28,12 +30,14 @@
 }
 
 .blackContainer .marginContainer #footContainer .signOff{
+    font-size: .8rem;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
     color: white;
     padding: .5rem;
+    border-top: 1px solid white;
 }
 .blackContainer .marginContainer #footContainer .social{
     font-size: 2rem;

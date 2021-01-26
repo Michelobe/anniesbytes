@@ -9,6 +9,7 @@ export default class TakeIt extends Component{
     render(){
         return(
             <div className="takeItContainer">
+                <div className="backgroundJumbo"></div>
                 <div className="whiteOverlay">
                     <div className="marginContainer">
                         <h2>Take it home</h2>
