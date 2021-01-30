@@ -1,14 +1,21 @@
 .portrayalContainer{
     position: relative;
-    width: 100vw;
+
+    /* ================CAUSING HORIZONTAL OVERFLOW============== */
+    /* width: 100vw; */
+    /* ================CAUSING HORIZONTAL OVERFLOW============== */
+
     height: 75vh;
 }
 .portrayalContainer .portrayalSect{
-    /* position: fixed;
-    top: -70rem;
-    z-index: -100;
-    background: url("https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fgarystern%2Ffiles%2F2019%2F04%2FLD.jpg") center bottom no-repeat;
-    background-size: cover; */
     width: 100%;
     height: 100%;
+}
+
+/* ================================ MEDIA QUERIES!!!! =============================== */
+/* ============================ IPAD PRO =========================== */
+@media only screen and (max-width: 1050px) {
+    .portrayalContainer{
+        height: 50vh;
+    }
 }

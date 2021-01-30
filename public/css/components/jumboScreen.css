@@ -1,4 +1,4 @@
- .marginContainer #jumboScreen{
+.marginContainer #jumboScreen{
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@
     height: 100%;
 }
  .marginContainer #jumboScreen .jumboLeft .jumboImg{
-    position: relative;
+    position: absolute;
     top: 2rem;
     background: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-burrito-egg-rolls-pin-1549490514.jpg?crop=1xw:0.9453781512605042xh;center,top&resize=480:*") center center no-repeat;
     background-size: cover;
@@ -76,3 +76,42 @@
     background:  rgb(240,129,26);
     color: white;
 }
+
+
+/* ================================ MEDIA QUERIES!!!! =============================== */
+/* ============================ IPAD PRO =========================== */
+@media only screen and (max-width: 1024px) {
+    .marginContainer #jumboScreen{
+        height: 71vh;
+    }
+    /* ==================== LEFT SIDE =================== */
+    .marginContainer #jumboScreen .jumboLeft .jumboImg{
+        top: 6rem;
+        right: 0;
+        width: 125%;
+        height: 57rem;
+    }
+}
+/* ============================ IPAD PRO =========================== */
+
+
+/* ============================ IPAD =========================== */
+@media only screen and (max-width: 800px) {
+    /* ==================== LEFT SIDE =================== */
+     .marginContainer #jumboScreen .jumboLeft .jumboImg{
+        height: 42rem;
+    }
+    /* ==================== RIGHT SIDE =================== */
+    .marginContainer #jumboScreen .jumboInfo h1{
+       font-size: 1.5rem;
+       margin: .5rem;
+   }
+    .marginContainer #jumboScreen .jumboInfo p{
+       font-size: 1rem;
+       /* letter-spacing: 1px; */
+       /* line-height: 1.25; */
+       /* text-align: center; */
+       margin: .5rem;
+   }
+}
+/* ============================ IPAD =========================== */

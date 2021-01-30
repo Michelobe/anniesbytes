@@ -49,3 +49,12 @@
 .blackContainer .marginContainer #footContainer .social .fab{
     padding: 0 .5rem;
 }
+
+
+/* ================================ MEDIA QUERIES!!!! =============================== */
+/* ============================ IPAD PRO =========================== */
+@media only screen and (max-width: 1050px) {
+    .blackContainer .marginContainer #footContainer .companyInfoContainer{
+        margin: 0 4rem;
+    }
+}

@@ -19,10 +19,6 @@ export default class Map extends Component {
                     </div>
                     <div className="mapArea">
                         <div className="mapContainer">
-
-
-
-
                             <div className="mapouter">
                                 <div className="gmap_canvas">
                                     <iframe width="504" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=1219%20SW%20Park%20Ave,%20Portland,%20OR%2097205&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
@@ -33,14 +29,6 @@ export default class Map extends Component {
                                     <style>.gmap_canvas {["overflow:hidden","background:none!important","height:500px","width:504px"]}</style>
                                 </div>
                             </div>
-
-
-
-
-
-
-
-
                         </div>
                     </div>
                         

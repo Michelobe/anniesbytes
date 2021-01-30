@@ -57,3 +57,13 @@
     background:  rgb(240,129,26);
     color: white;
 }
+
+/* ================================ MEDIA QUERIES!!!! =============================== */
+/* ============================ IPAD PRO =========================== */
+@media only screen and (max-width: 1050px) {
+    /* ==================== RIGHT SIDE =================== */
+    .whiteContainer .marginContainer #beerSection .beerInfo{
+        padding: 1.60rem 0;
+        margin: 0;
+    }
+}
