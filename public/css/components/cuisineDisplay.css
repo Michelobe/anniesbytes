@@ -65,6 +65,7 @@
    }
 }
 
+
 /* ============================ IPAD =========================== */
 @media only screen and (max-width: 800px) {
     .marginContainer #cuisineDisplay{
@@ -74,4 +75,21 @@
        height: 15rem;
        width: 15rem;
    }
+}
+
+
+/* ============================ IPHONE 6/7/8 PLUS =========================== */
+@media only screen and (max-width: 450PX) {
+    .marginContainer #cuisineDisplay .cuisineMenu{
+        flex-flow: column;
+    }
+    .marginContainer #cuisineDisplay .cuisineMenu .cuisineLi{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .marginContainer #cuisineDisplay .cuisineMenu .cuisineLi .cuisinePic{
+        height: 20rem;
+        width: 20rem;
+    }
 }

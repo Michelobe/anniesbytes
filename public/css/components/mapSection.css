@@ -64,10 +64,29 @@
        margin: 1rem 4rem;
     }
 }
+
+
 /* ============================ IPAD =========================== */
 @media only screen and (max-width: 800px) {
     .whiteContainer .marginContainer #mapSection .mapArea .mapContainer{
         display: flex;
+        align-items: center;
+    }
+    .whiteContainer .marginContainer #mapSection .mapArea .mapContainer .mapouter .gmap_canvas iframe{
+        width: 404px !important;
+        height: 400px !important;
+    }
+}
+
+
+/* ============================ IPHONE 6/7/8 PLUS =========================== */
+@media only screen and (max-width: 450PX) {
+    .whiteContainer .marginContainer #mapSection{
+        flex-flow: column;
+    }
+    .whiteContainer .marginContainer #mapSection .locationInfo{
+        display: flex;
+        flex-flow: column;
         align-items: center;
     }
     .whiteContainer .marginContainer #mapSection .mapArea .mapContainer .mapouter .gmap_canvas iframe{

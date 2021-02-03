@@ -107,8 +107,9 @@
    }
 }
 
-/* ================================ MEDIA QUERIES!!!! =============================== */
-/* ============================ IPAD =========================== */
+
+
+/* =================================== IPAD ================================= */
 @media only screen and (max-width: 800px) {
     /* ==================== LEFT SIDE =================== */
      .marginContainer #jumboScreen .jumboLeft .jumboImg{
@@ -117,5 +118,32 @@
     /* ==================== RIGHT SIDE =================== */
     .marginContainer #jumboScreen .jumboInfo p{
        margin: .5rem;
+   }
+}
+
+
+/* ============================ IPHONE 6/7/8 PLUS =========================== */
+@media only screen and (max-width: 450PX) {
+    .marginContainer #jumboScreen{
+        flex-flow: column;
+        height: auto;
+        padding-bottom: 2rem;
+    }
+    /* ==================== LEFT SIDE =================== */
+     .marginContainer #jumboScreen .jumboLeft{
+        height: 300px;
+    }
+    .marginContainer #jumboScreen .jumboLeft .jumboImg{
+       top: 0;
+       left: 0;
+       height: 100%;
+       width: 100%;
+   }
+   /* ==================== RIGHT SIDE =================== */
+    .marginContainer #jumboScreen .jumboInfo{
+        margin: 3rem 0 3rem 0;
+    }
+    .marginContainer #jumboScreen .jumboInfo .jumboInfoImg{
+       height: 7rem;
    }
 }

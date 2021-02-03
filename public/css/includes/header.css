@@ -2,64 +2,102 @@
     background: black;
     color: white;
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
     font-size: .8rem;
     letter-spacing: 1px;
-    padding: .5rem 0;
+    padding: 1rem 0;
     text-transform: capitalize;
     position: absolute;
-    width: 100%;
+    width: 97%;
     z-index: 100;
 }
- .marginContainer #header .logoMenu{
+
+/* ==================== LEFT SIDE =================== */
+.marginContainer #header .headerLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.marginContainer #header .headerLeft i{
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+ .marginContainer #header .headerLeft .logoMenu{
     background: black;
     color: white;
     display: flex;
     flex-flow: row;
     justify-content: space-around;
 }
- .marginContainer #header .logoMenu li{
+ .marginContainer #header .headerLeft .logoMenu li{
     padding: 1rem;
     display: flex;
     align-items: center;
 }
- .marginContainer #header .logoMenu li:hover{
+ .marginContainer #header .headerLeft .logoMenu li:hover{
     cursor: pointer;
 }
- .marginContainer #header .logoMenu li:nth-child(1){
-    font-size: 1.5rem;
+
+/* ==================== RIGHT SIDE =================== */
+ .marginContainer #header .headerRight{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
- .marginContainer #header .orderMenu{
+ .marginContainer #header .headerRight .orderMenu{
     background: black;
     color: white;
     display: flex;
     flex-flow: row;
-    justify-content: flex-end;
+    justify-content: space-around;
+    
 }
- .marginContainer #header .orderMenu li{
-    margin: .5rem .25rem;
-    padding: 0 1.5rem;
+ .marginContainer #header .headerRight .orderMenu li{
+    margin: 0 .45rem;
+    padding: 1rem 1.5rem;
     display: flex;
     align-items: center;
     border: 1px white solid;
     border-radius: 50px;
     /* font-size: 1rem; */
 }
- .marginContainer #header .orderMenu li:hover{
+ .marginContainer #header .headerRight .orderMenu li:hover{
     cursor: pointer;
     background:  rgb(240,129,26);
     color: white;
     transition: all .3s ease-in-out;
 }
+.marginContainer #header .headerRight .menuBtn{
+    position: absolute;
+    visibility: hidden;
+    font-size: 1.5rem;
+    padding: .8rem;
+    border: 1px white solid;
+    border-radius: 25%;
+}
 
 /* ================================ MEDIA QUERIES!!!! =============================== */
-/* ============================ IPHONE X =========================== */
-@media only screen and (max-width: 350PX) {
-    .marginContainer #cuisineDisplay{
-        padding: 0;
+/* ============================ IPHONE 6/7/8 PLUS =========================== */
+@media only screen and (max-width: 450PX) {
+    .marginContainer #header{
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        position: static;
+        padding: 1.5rem 0;
+        width: 100%;
     }
-    .marginContainer #cuisineDisplay .cuisineMenu .cuisineLi .cuisinePic{
-       height: 17rem;
-       width: 19rem;
+    .marginContainer #header .headerLeft .logoMenu{
+        position: absolute;
+        visibility: hidden;
+    }
+    .marginContainer #header .headerRight{
+        position: absolute;
+        visibility: hidden;
+   }
+   .marginContainer #header .headerRight .menuBtn{
+        position: static;
+        visibility: visible;
+        margin-right: 1rem;
    }
 }
