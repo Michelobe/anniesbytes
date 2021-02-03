@@ -34,7 +34,7 @@
 }
 .takeItContainer .whiteOverlay .marginContainer .btnContainer{
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: center;
 }
 .takeItContainer .whiteOverlay .marginContainer .btnContainer .takeBtn{

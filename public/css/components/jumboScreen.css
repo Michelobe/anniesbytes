@@ -22,7 +22,7 @@
     background: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-burrito-egg-rolls-pin-1549490514.jpg?crop=1xw:0.9453781512605042xh;center,top&resize=480:*") center center no-repeat;
     background-size: cover;
     width: 100%;
-    height: 61rem;
+    height: 100%;
     overflow: hidden;
     z-index: 50;
 }
@@ -80,7 +80,7 @@
 
 /* ================================ MEDIA QUERIES!!!! =============================== */
 /* ============================ IPAD PRO =========================== */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1050px) {
     .marginContainer #jumboScreen{
         height: 71vh;
     }
@@ -89,29 +89,33 @@
         top: 6rem;
         right: 0;
         width: 125%;
-        height: 57rem;
+        height: 95%;
     }
+    /* ==================== RIGHT SIDE =================== */
+     .marginContainer #jumboScreen .jumboInfo .jumboInfoImg{
+        height: 20%;
+    }
+     .marginContainer #jumboScreen .jumboInfo h1{
+        font-size: 1.5rem;
+    }
+     .marginContainer #jumboScreen .jumboInfo p{
+        font-size: 1rem;
+    }
+    .marginContainer #jumboScreen .jumboInfo .menuBtn{
+        font-size: 1.5rem;
+       margin-top: 1rem;
+   }
 }
-/* ============================ IPAD PRO =========================== */
 
-
+/* ================================ MEDIA QUERIES!!!! =============================== */
 /* ============================ IPAD =========================== */
 @media only screen and (max-width: 800px) {
     /* ==================== LEFT SIDE =================== */
      .marginContainer #jumboScreen .jumboLeft .jumboImg{
-        height: 42rem;
+        height: 92%;
     }
     /* ==================== RIGHT SIDE =================== */
-    .marginContainer #jumboScreen .jumboInfo h1{
-       font-size: 1.5rem;
-       margin: .5rem;
-   }
     .marginContainer #jumboScreen .jumboInfo p{
-       font-size: 1rem;
-       /* letter-spacing: 1px; */
-       /* line-height: 1.25; */
-       /* text-align: center; */
        margin: .5rem;
    }
 }
-/* ============================ IPAD =========================== */

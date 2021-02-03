@@ -50,17 +50,28 @@
     margin: 0 auto;
 
 }
-.whiteContainer .marginContainer #mapSection .mapArea .mapContainer img{
-    max-width: 100%;
-}
 
 /* ================================ MEDIA QUERIES!!!! =============================== */
 /* ============================ IPAD PRO =========================== */
 @media only screen and (max-width: 1050px) {
     .whiteContainer .marginContainer #mapSection .locationInfo h1{
+        font-weight: bold;
+        font-size: 1.5rem;
         margin: 1rem 4rem;
     }
     .whiteContainer .marginContainer #mapSection .locationInfo p{
+        font-size: 1rem;
        margin: 1rem 4rem;
+    }
+}
+/* ============================ IPAD =========================== */
+@media only screen and (max-width: 800px) {
+    .whiteContainer .marginContainer #mapSection .mapArea .mapContainer{
+        display: flex;
+        align-items: center;
+    }
+    .whiteContainer .marginContainer #mapSection .mapArea .mapContainer .mapouter .gmap_canvas iframe{
+        width: 404px !important;
+        height: 400px !important;
     }
 }

@@ -10,8 +10,8 @@ export default class Header extends Component {
         return (
             <div className="marginContainer">
                 <section id="header">
+                    <i className="fas fa-pizza-slice"></i>
                     <ul className="logoMenu">
-                        <li><i className="fas fa-pizza-slice"></i></li>
                         <li>Menu</li>
                         <li>Catering</li>
                         <li>Store</li>

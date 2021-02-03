@@ -58,3 +58,10 @@
         margin: 0 4rem;
     }
 }
+
+/* ============================ IPAD =========================== */
+@media only screen and (max-width: 800px) {
+    .blackContainer .marginContainer #footContainer .companyInfoContainer{
+        margin: 0 1rem;
+    }
+}

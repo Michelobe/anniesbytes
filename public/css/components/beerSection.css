@@ -14,6 +14,7 @@
 }
 .whiteContainer .marginContainer #beerSection .beerImg img{
     position: absolute;
+    height: 100%;
     right: 0;
     /* max-width: 100%; */
     /* background-size: cover; */
@@ -65,5 +66,22 @@
     .whiteContainer .marginContainer #beerSection .beerInfo{
         padding: 1.60rem 0;
         margin: 0;
+    }
+    .whiteContainer .marginContainer #beerSection .beerInfo h1{
+        font-size: 1.5rem;
+    }
+    .whiteContainer .marginContainer #beerSection .beerInfo p{
+        font-size: 1rem;
+    }
+}
+
+/* ============================ IPAD =========================== */
+@media only screen and (max-width: 800px) {
+    .whiteContainer .marginContainer #beerSection .beerInfo h1{
+        font-weight: bold;
+    }
+    .whiteContainer .marginContainer #beerSection .beerInfo p{
+        font-size: 1rem;
+        margin: 1rem 4rem;
     }
 }
