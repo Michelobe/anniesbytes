@@ -24,26 +24,35 @@
     height: 10rem;
 }
 .blackContainer .marginContainer #reviewSection .boxContainer .reviewCompanyBox.boxOne{
-    width: 10rem;
-    height: 10rem;
     background: url("https://sanzaris.com/wp-content/uploads/2014/06/Best-Restaurant-in-NJ-is-2014-Open-Table-Diners-Choice-Winner.png") center center no-repeat;
     background-size: contain;
 }
 .blackContainer .marginContainer #reviewSection .boxContainer .reviewCompanyBox.boxTwo{
-    width: 10rem;
-    height: 10rem;
     background: url("https://cdn.vox-cdn.com/uploads/chorus_asset/file/13551805/EaterAwards_RecircSquare__1_.png") center center no-repeat;
     background-size: contain;
 }
 .blackContainer .marginContainer #reviewSection .boxContainer .reviewCompanyBox.boxThree{
-    width: 10rem;
-    height: 10rem;
     background: url("https://samuelslaw.com/wp-content/uploads/2016/06/2016-best-of.png") center center no-repeat;
     background-size: contain;
 }
 .blackContainer .marginContainer #reviewSection .boxContainer .reviewCompanyBox.boxFour{
-    width: 10rem;
-    height: 10rem;
     background: url("https://whatsnewindonesia.com/jakarta/wp-content/uploads/sites/2/2019/08/2019-Restaurant-Awards-Winner-Logo-White-Background-Black-Text-e1564724584961.jpg") center center no-repeat;
     background-size: 100%;
+}
+
+
+/* ================================ MEDIA QUERIES!!!! =============================== */
+/* ============================ IPHONE 6/7/8 PLUS =========================== */
+@media only screen and (max-width: 450PX) {
+    .blackContainer .marginContainer #reviewSection .boxContainer{
+        flex-flow: row wrap;
+    }
+    .blackContainer .marginContainer #reviewSection{
+        padding: 3rem 0;
+    }
+    .blackContainer .marginContainer #reviewSection .boxContainer .reviewCompanyBox{
+        /* width: 8rem; */
+        /* height: 8rem; */
+        padding-bottom: 2rem;
+    }
 }

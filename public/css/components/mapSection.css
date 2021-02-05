@@ -44,12 +44,12 @@
 .whiteContainer .marginContainer #mapSection .mapArea{
     width: 100%;
 }
-.whiteContainer .marginContainer #mapSection .mapArea .mapContainer{
+/* .whiteContainer .marginContainer #mapSection .mapArea .mapContainer{
     width: 504px;
     height: 500px;
     margin: 0 auto;
 
-}
+} */
 
 /* ================================ MEDIA QUERIES!!!! =============================== */
 /* ============================ IPAD PRO =========================== */
@@ -68,13 +68,21 @@
 
 /* ============================ IPAD =========================== */
 @media only screen and (max-width: 800px) {
+    /* =================== LEFT SIDE FLEXBOX ======================== */
+    .whiteContainer .marginContainer #mapSection .locationInfo h1{
+        margin: 1rem 1.5rem;
+    }
+    .whiteContainer .marginContainer #mapSection .locationInfo p{
+       margin: 1rem 1.5rem;
+    }
+    /* =================== RIGHT SIDE FLEXBOX ======================== */
     .whiteContainer .marginContainer #mapSection .mapArea .mapContainer{
         display: flex;
         align-items: center;
     }
     .whiteContainer .marginContainer #mapSection .mapArea .mapContainer .mapouter .gmap_canvas iframe{
-        width: 404px !important;
-        height: 400px !important;
+        width: 354px !important;
+        height: 350px !important;
     }
 }
 
@@ -84,13 +92,16 @@
     .whiteContainer .marginContainer #mapSection{
         flex-flow: column;
     }
+    /* =================== LEFT SIDE FLEXBOX ======================== */
     .whiteContainer .marginContainer #mapSection .locationInfo{
         display: flex;
         flex-flow: column;
         align-items: center;
+        padding-bottom: 3rem;
     }
-    .whiteContainer .marginContainer #mapSection .mapArea .mapContainer .mapouter .gmap_canvas iframe{
-        width: 404px !important;
-        height: 400px !important;
+    /* =================== RIGHT SIDE FLEXBOX ======================== */
+    .whiteContainer .marginContainer #mapSection .mapArea .mapContainer{
+        display: flex;
+        justify-content: center;
     }
 }

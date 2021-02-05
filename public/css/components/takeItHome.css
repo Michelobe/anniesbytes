@@ -42,11 +42,11 @@
     font-size: 2.2rem;
     letter-spacing: 1px;
     padding: 1rem 2rem;
-    margin-top: 3rem;
     border: 1px solid white;
     border-radius: 15px;
     transition: all .3s ease-in-out;
     margin: 2rem 1rem 0 1rem;
+    min-width: 141px;
 }
 .takeItContainer .whiteOverlay .marginContainer .btnContainer .takeBtn:hover{
     cursor: pointer;
@@ -56,9 +56,20 @@
 
 
 /* ================================ MEDIA QUERIES!!!! =============================== */
+/* ============================ IPAD =========================== */
+@media only screen and (max-width: 800px) {
+    .takeItContainer .whiteOverlay .marginContainer h1{
+        font-size: 6rem;
+    }
+}
+
+
 /* ============================ IPHONE 6/7/8 PLUS =========================== */
 @media only screen and (max-width: 450PX) {
+    .takeItContainer .whiteOverlay{
+        padding: 0;
+    }
     .takeItContainer .whiteOverlay .marginContainer h1{
-        font-size: 2rem;
+        font-size: 3.5rem;
     }
 }

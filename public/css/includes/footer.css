@@ -65,3 +65,14 @@
         margin: 0 1rem;
     }
 }
+
+/* ============================ IPHONE 6/7/8 PLUS =========================== */
+@media only screen and (max-width: 450PX) {
+    .blackContainer .marginContainer #footContainer .companyInfoContainer{
+        flex-flow: column;
+        padding: 3rem 2rem;
+    }
+    .blackContainer .marginContainer #footContainer .companyInfoContainer>*{
+        padding-bottom: 1.5rem;
+    }
+}

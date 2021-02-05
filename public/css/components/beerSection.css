@@ -85,3 +85,22 @@
         margin: 1rem 4rem;
     }
 }
+
+/* ============================ IPHONE 6/7/8 PLUS =========================== */
+@media only screen and (max-width: 450PX) {
+    .whiteContainer .marginContainer #beerSection {
+        flex-flow: column;
+        justify-content: center;
+    }
+    /* ==================== LEFT SIDE =================== */
+    .whiteContainer .marginContainer #beerSection .beerImg{
+        height: 50vh;
+    }
+    .whiteContainer .marginContainer #beerSection .beerImg img{
+        right: -25vw;
+    }
+    /* ==================== RIGHT SIDE =================== */
+    .whiteContainer .marginContainer #beerSection .beerInfo{
+        padding: 1.5rem 0 2.5rem 0;
+    }
+}

@@ -11,7 +11,7 @@ export default class Header extends Component {
             <div className="marginContainer">
                 <section id="header">
                     <div className="headerLeft">
-                        <i className="fas fa-pizza-slice"></i>
+                        <h1>AB</h1>
                         <ul className="logoMenu">
                             <li>Menu</li>
                             <li>Catering</li>
@@ -29,6 +29,14 @@ export default class Header extends Component {
                             <i className="fas fa-bars"></i>
                         </a>
                     </div>
+                    {/* <div className="halfMenu leftMenu">
+                        <p>Gift Cards</p>
+                        <p>Reserve</p>
+                    </div>
+                    <div className="halfMenu rightMenu">
+                        <p>Menu</p>
+                        <p>Store</p>
+                    </div> */}
                 </section>
             </div>
         );

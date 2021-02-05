@@ -14,7 +14,8 @@ export default class JumboScreen extends Component {
                         </div>
                     </div>
                     <div className="jumboInfo">
-                        <div className="jumboInfoImg">
+                        <div className="jumboName">
+                            <h1>AnnieBytes</h1>
                         </div>
                         <h1>Pacific North West Fine Dining experience</h1>
                         <p>Spicy jalapeno bacon ipsum dolor amet laborum pork nulla dolore sunt short ribs. In swine consequat biltong nostrud id. Mollit aute nisi, capicola meatball magna esse.</p>
