@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from "react-router-dom";
 
 export default class MainHeader extends Component {
     constructor() {
@@ -25,9 +26,11 @@ export default class MainHeader extends Component {
                             <li>Delivery</li>
                             <li>Reserve</li>
                         </ul>
-                        <a className="menuBtn">
+                    <Link to="/:order">
+                        <div className="menuBtn">
                             <i className="fas fa-bars"></i>
-                        </a>
+                        </div>
+                    </Link>
                     </div>
                     {/* <div className="halfMenu leftMenu">
                         <p>Gift Cards</p>
