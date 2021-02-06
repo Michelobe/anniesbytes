@@ -106,9 +106,6 @@
     padding: 5rem 3rem;
     cursor: pointer;
 }
-.marginContainer #header .leftMenu{
-    
-}
 .marginContainer #header .rightMenu{
     left: 50vw;
 }

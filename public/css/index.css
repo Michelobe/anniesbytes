@@ -1,13 +1,15 @@
 
 @import "reset.css";
-@import "includes/header.css";
-@import "components/jumboScreen.css";
-@import "components/cuisineDisplay.css";
-@import "components/portrayal.css";
-@import "components/mapSection.css";
-@import "components/beerSection.css";
-@import "components/reviewSection.css";
-@import "components/takeItHome.css";
+@import "includes/cartHeader.css";
+@import "includes/mainHeader.css";
+@import "components/mainPage/jumboScreen.css";
+@import "components/mainPage/cuisineDisplay.css";
+@import "components/mainPage/portrayal.css";
+@import "components/mainPage/mapSection.css";
+@import "components/mainPage/beerSection.css";
+@import "components/mainPage/reviewSection.css";
+@import "components/mainPage/takeItHome.css";
+@import "components/deliveryTakeout/orderJumbo.css";
 @import "includes/footer.css";
 
 body {

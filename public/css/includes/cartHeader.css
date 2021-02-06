@@ -1,0 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+
+#cartHeader{
+    position: absolute;
+    width: 100vw;
+    background: black;
+}
+#cartHeader .marginContainer{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+/* ==================== LEFT SIDE =================== */
+#cartHeader .marginContainer .cartLeft h1{
+    color: rgb(11,151,48);
+    font-family: 'Arizonia', cursive;
+    font-size: 5rem;
+}
+
+/* ==================== RIGHT SIDE =================== */
+#cartHeader .marginContainer .cartRight{
+    color: rgb(11,151,48);
+    font-size: 5rem;
+}
