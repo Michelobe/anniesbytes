@@ -4,7 +4,24 @@ import {Link} from "react-router-dom";
 export default class MainHeader extends Component {
     constructor() {
         super();
-        this.state = {};
+        this.state = {
+            isActive: false
+        };
+        this.clickMenu=this.clickMenu.bind(this);
+
+    }
+
+
+    clickMenu =() => {
+        if (this.state.isActive === true){
+            this.setState({
+                isActive: !true
+            })
+        }else{
+            this.setState({
+                isActive: !false
+            })
+        }
     }
 
     render() {
@@ -26,20 +43,23 @@ export default class MainHeader extends Component {
                             <li>Delivery</li>
                             <li>Reserve</li>
                         </ul>
-                    <Link to="/:order">
-                        <div className="menuBtn">
+                        <div className="menuBtn" onClick={this.clickMenu}>
                             <i className="fas fa-bars"></i>
                         </div>
-                    </Link>
                     </div>
-                    {/* <div className="halfMenu leftMenu">
+                    <div className={`halfMenu leftMenu ${this.state.isActive ? 'active' : ''}`}>
                         <p>Gift Cards</p>
                         <p>Reserve</p>
                     </div>
-                    <div className="halfMenu rightMenu">
+                    <div className={`halfMenu rightMenu ${this.state.isActive ? 'active' : ''}`}>
                         <p>Menu</p>
-                        <p>Store</p>
-                    </div> */}
+                        <Link to="/:order">
+                            <p>Store</p>
+                        </Link>
+                        <div className="exitBtn" onClick={this.clickMenu}>
+                            <i className="far fa-times-circle"></i>
+                        </div>
+                    </div>
                 </section>
             </div>
         );

@@ -81,16 +81,6 @@
     color: white;
 }
 /* ==================== RIGHT SIDE =================== */
-/* .marginContainer #header .btnMenu{
-    position: absolute;
-    background: blue;
-    top: 0;
-    z-index: 150;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-flow: row;
-} */
 .marginContainer #header .halfMenu{
     position: absolute;
     background: blue;
@@ -101,13 +91,34 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    transition: all 1s ease-in-out;
 }
 .marginContainer #header .halfMenu p{
     height: 50vh;
     padding: 5rem 3rem;
     cursor: pointer;
 }
+.marginContainer #header .leftMenu{
+    left: 100vw;
+}
 .marginContainer #header .rightMenu{
+    left: 100vw;
+}
+.marginContainer #header .rightMenu a{
+    color: white;
+    text-decoration: none;
+}
+.marginContainer #header .rightMenu .exitBtn{
+    position: absolute;
+    font-size: 3rem;
+    top: 0;
+    right: 0;
+    padding: .5rem;
+}
+.marginContainer #header .leftMenu.active{
+    left: 0;
+}
+.marginContainer #header .rightMenu.active{
     left: 50vw;
 }
 

@@ -44,6 +44,9 @@
 /* ================================ MEDIA QUERIES!!!! =============================== */
 /* ============================ IPAD PRO =========================== */
 /* ==================== LEFT SIDE =================== */
+#cartHeader .marginContainer .cartLeft a{
+    text-decoration: none;
+}
 #cartHeader .marginContainer .cartLeft h1{
     font-size: 2rem;
 }

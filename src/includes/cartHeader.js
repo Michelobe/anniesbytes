@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Link} from 'react-router-dom';
 
 export default class CartHeader extends Component {
     constructor(){
@@ -11,7 +12,9 @@ export default class CartHeader extends Component {
             <div id="cartHeader">
                 <div className="marginContainer">
                     <div className="cartLeft">
-                        <h1>AnniesBytes</h1>
+                        <Link to='/'>
+                            <h1>AnniesBytes</h1>
+                        </Link>
                         <h3>Home</h3>
                         <h3>Menu</h3>
                     </div>
