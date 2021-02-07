@@ -1,6 +1,6 @@
 
 @import "reset.css";
-@import "includes/cartHeader.css";
+/* =============== MAIN PAGE ================ */
 @import "includes/mainHeader.css";
 @import "components/mainPage/jumboScreen.css";
 @import "components/mainPage/cuisineDisplay.css";
@@ -9,7 +9,11 @@
 @import "components/mainPage/beerSection.css";
 @import "components/mainPage/reviewSection.css";
 @import "components/mainPage/takeItHome.css";
+/* =============== PICKUP/TAKEOUT ================ */
+@import "includes/cartHeader.css";
 @import "components/deliveryTakeout/orderJumbo.css";
+@import "components/deliveryTakeout/pickupOptions.css";
+/* =============== FOOTER ================ */
 @import "includes/footer.css";
 
 body {

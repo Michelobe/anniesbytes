@@ -1,5 +1,5 @@
 .backgroundJumbo{
-    position: absolute;
+    position: static;
     top: 0;
     width: 100vw;
     height: 55vh;
