@@ -42,15 +42,15 @@ class App extends Component {
                         <Reviews />
                     </div>
                     <TakeIt />
-                    <div className="blackContainer">
-                        <Footer />
-                    </div>
                 </Route>
                 <Route exact path="/:order">
                     <CartHeader />
                     <OrderJumbo />
                     <Pickup />
                 </Route>
+                <div className="blackContainer">
+                    <Footer />
+                </div>
             </div>
         </Router>
     );

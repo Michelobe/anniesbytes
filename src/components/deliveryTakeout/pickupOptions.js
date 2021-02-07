@@ -10,7 +10,8 @@ export default class Pickup extends Component{
         return(
             <div className="pickupOptions">
                 <div className="marginContainer">
-                    <h1>Hi Ryan and Mariano!!!!!!!</h1>
+                    <h1>Bevri</h1>
+                    <p>1219 SW Park Ave, Portland, OR 97205</p>
                 </div>
             </div>
         );
