@@ -6,7 +6,6 @@
 .pickupOptions .prepJumbo{
     color: gray;
     border-bottom: 1px solid gray;
-    width: 100%;
     padding: 1.5rem 0;
 }
 .pickupOptions .prepJumbo .marginContainer h1{
@@ -17,7 +16,7 @@
 }
 .pickupOptions .prepJumbo .marginContainer .prepInfo{
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     align-items: center;
     font-size: .8rem;
     padding-bottom: 1rem;
@@ -45,8 +44,7 @@
 }
 /* ============================================================================== */
 .pickupOptions .selectLoc{
-    border-bottom: 2px solid red;
-    width: 100%;
+    border-bottom: 1px solid gray;
     padding: 1.5rem 0;
 }
 .pickupOptions .selectLoc .marginContainer{
@@ -148,4 +146,25 @@
     font-weight: bold;
     letter-spacing: 1px;
     padding: 1rem 2rem;
+}
+
+/* ================================ MEDIA QUERIES!!!! =============================== */
+/* ============================ IPHONE 6/7/8 PLUS =========================== */
+@media only screen and (max-width: 450PX) {
+    .pickupOptions .prepJumbo{
+        padding: 1.5rem;
+    }
+    .pickupOptions .prepJumbo .marginContainer .prepInfo{
+        flex-flow: column;
+        align-items: flex-start;
+    }
+    .pickupOptions .prepJumbo .marginContainer .prepInfo i{
+        visibility: hidden;
+    }
+    .pickupOptions .selectLoc{
+        padding: 1.5rem;
+    }
+    .pickupOptions .selectLoc .marginContainer .pickupInfo .seeMenuBtn{
+        width: 45%;
+    }
 }

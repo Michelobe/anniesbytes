@@ -40,3 +40,20 @@
     margin-left: 1rem;
 }
 
+
+/* ================================ MEDIA QUERIES!!!! =============================== */
+/* ============================ IPAD PRO =========================== */
+/* ==================== LEFT SIDE =================== */
+#cartHeader .marginContainer .cartLeft h1{
+    font-size: 2rem;
+}
+#cartHeader .marginContainer .cartLeft h3{
+    display: none;
+}
+/* ==================== RIGHT SIDE =================== */
+#cartHeader .marginContainer .cartRight{
+    font-size: 1rem;
+}
+#cartHeader .marginContainer .cartRight .fa-shopping-cart{
+    margin: 0 .5rem 0 .5rem;
+}
