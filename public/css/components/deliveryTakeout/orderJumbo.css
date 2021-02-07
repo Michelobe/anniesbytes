@@ -8,3 +8,11 @@
     background-size: cover;
     overflow: hidden;
 }
+
+/* ================================ MEDIA QUERIES!!!! =============================== */
+/* ============================ IPAD PRO =========================== */
+@media only screen and (max-width: 1050px) {
+    .backgroundJumbo{
+        height: 25vh;
+    }
+}

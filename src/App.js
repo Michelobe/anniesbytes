@@ -25,8 +25,10 @@ class App extends Component {
     return (
         <Router>
             <div>
+                {/* =================THE MAIN PAGE=================== */}
                 <Route exact path="/">
                     <div className="blackContainer">
+                        {/* ================= MAIN HEADER =================== */}
                         <MainHeader />
                         <JumboScreen />
                     </div>
@@ -43,11 +45,14 @@ class App extends Component {
                     </div>
                     <TakeIt />
                 </Route>
+                {/* =================THE TAKEOUT/DELIVERY PAGE=================== */}
                 <Route exact path="/:order">
+                    {/* ================= CART HEADER =================== */}
                     <CartHeader />
                     <OrderJumbo />
                     <Pickup />
                 </Route>
+                {/* ================= FOOTER(SHOWS ON EVERY PAGE) =================== */}
                 <div className="blackContainer">
                     <Footer />
                 </div>
