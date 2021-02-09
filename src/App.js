@@ -10,7 +10,6 @@ import Beer from "./components/mainPage/beerSection.js";
 import Reviews from "./components/mainPage/reviewSection.js";
 import TakeIt from "./components/mainPage/takeItHome.js";
 // =============== PICKUP/TAKEOUT ================
-import CartHeader from "./includes/cartHeader.js";
 import OrderJumbo from "./components/deliveryTakeout/orderJumbo.js";
 import Pickup from "./components/deliveryTakeout/pickupOptions.js";
 // =============== FOOTER ================
@@ -28,7 +27,6 @@ class App extends Component {
                 {/* =================THE MAIN PAGE=================== */}
                 <Route exact path="/">
                     <div className="blackContainer">
-                        {/* ================= MAIN HEADER =================== */}
                         <MainHeader />
                         <JumboScreen />
                     </div>
@@ -47,8 +45,9 @@ class App extends Component {
                 </Route>
                 {/* =================THE TAKEOUT/DELIVERY PAGE=================== */}
                 <Route exact path="/:order">
-                    {/* ================= CART HEADER =================== */}
-                    <CartHeader />
+                    <div className="blackContainer">
+                        <MainHeader />
+                    </div>
                     <OrderJumbo />
                     <Pickup />
                 </Route>

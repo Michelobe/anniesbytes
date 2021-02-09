@@ -28,6 +28,7 @@ export default class MainHeader extends Component {
         return (
             <div className="marginContainer">
                 <section id="header">
+                    {/* <<<<<<<<<<<<<<<<<<<<<<<<< LEFT <<<<<<<<<<<<<<<<<<<<<<<<<<<< */}
                     <div className="headerLeft">
                         <h1>AB</h1>
                         <ul className="logoMenu">
@@ -36,13 +37,30 @@ export default class MainHeader extends Component {
                             <li>Store</li>
                             <li>Gift Cards</li>
                         </ul>
+                        {/* ============= MOBILE HEADER LEFT ============= */}
+                        <div className="mobileCartLeft">
+                            <Link to='/'>
+                                <h1>AnniesBytes</h1>
+                            </Link>
+                        </div>
+                        {/* ============= MOBILE HEADER LEFT ============= */}
                     </div>
+
+
+
+                    {/* >>>>>>>>>>>>>>>>>>>>>>>>>> RIGHT >>>>>>>>>>>>>>>>>>>>>>>  */}
                     <div className="headerRight">
                         <ul className="orderMenu">
                             <li>Pickup</li>
                             <li>Delivery</li>
                             <li>Reserve</li>
                         </ul>
+                        {/* ============= MOBILE HEADER RIGHT ============= */}
+                        <div className="mobileCartRight">
+                            <i className="fas fa-search"></i>
+                            <i className="fas fa-shopping-cart"></i>
+                        </div>
+                        {/* ============= MOBILE HEADER RIGHT ============= */}
                         <div className="menuBtn" onClick={this.clickMenu}>
                             <i className="fas fa-bars"></i>
                         </div>

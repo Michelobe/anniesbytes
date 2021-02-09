@@ -10,7 +10,6 @@
 @import "components/mainPage/reviewSection.css";
 @import "components/mainPage/takeItHome.css";
 /* =============== PICKUP/TAKEOUT ================ */
-@import "includes/cartHeader.css";
 @import "components/deliveryTakeout/orderJumbo.css";
 @import "components/deliveryTakeout/pickupOptions.css";
 /* =============== FOOTER ================ */
