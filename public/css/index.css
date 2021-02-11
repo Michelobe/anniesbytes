@@ -54,7 +54,7 @@ body {
 /* ================================= MEDIA QUERIES!!!! ====================================== */
 /* ============================ IPAD PRO =========================== */
 @media only screen and (max-width: 1050px) {
-    /* === THIS IS THE MAIN CONTAINER KEEPING INFORMATION LESS THAN 1200PX === */
+    /* === THIS IS THE MAIN CONTAINER KEEPING INFORMATION LESS THAN 950PX === */
     .marginContainer{
         max-width: 950px;
     }
@@ -64,7 +64,7 @@ body {
 
 /* ============================== IPAD ============================= */
 @media only screen and (max-width: 800px){
-    /* === THIS IS THE MAIN CONTAINER KEEPING INFORMATION LESS THAN 1200PX === */
+    /* === THIS IS THE MAIN CONTAINER KEEPING INFORMATION LESS THAN 750PX === */
     .marginContainer{
         max-width: 750px;
     }

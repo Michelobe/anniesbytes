@@ -15,11 +15,11 @@ export default class MainHeader extends Component {
     clickMenu =() => {
         if (this.state.isActive === true){
             this.setState({
-                isActive: !true
+                isActive: false
             })
         }else{
             this.setState({
-                isActive: !false
+                isActive: true
             })
         }
     }
@@ -30,7 +30,7 @@ export default class MainHeader extends Component {
                 <section id="header">
                     {/* <<<<<<<<<<<<<<<<<<<<<<<<< LEFT <<<<<<<<<<<<<<<<<<<<<<<<<<<< */}
                     <div className="headerLeft">
-                        <h1>AB</h1>
+                        <h1 className="mainH1">AB</h1>
                         <ul className="logoMenu">
                             <li>Menu</li>
                             <li>Catering</li>
@@ -57,16 +57,15 @@ export default class MainHeader extends Component {
                         </ul>
                         {/* ============= MOBILE HEADER RIGHT ============= */}
                         <div className="mobileCartRight">
-                            <i className="fas fa-search"></i>
                             <i className="fas fa-shopping-cart"></i>
                         </div>
-                        {/* ============= MOBILE HEADER RIGHT ============= */}
                         <div className="menuBtn" onClick={this.clickMenu}>
                             <i className="fas fa-bars"></i>
                         </div>
                     </div>
+                    {/* ================================= MENU ACCORDIAN =========================== */}
                     <div className={`halfMenu leftMenu ${this.state.isActive ? 'active' : ''}`}>
-                        <p>Gift Cards</p>
+                        <p>Search</p>
                         <p>Reserve</p>
                     </div>
                     <div className={`halfMenu rightMenu ${this.state.isActive ? 'active' : ''}`}>
@@ -78,6 +77,7 @@ export default class MainHeader extends Component {
                             <i className="far fa-times-circle"></i>
                         </div>
                     </div>
+                    {/* ================================= MENU ACCORDIAN =========================== */}
                 </section>
             </div>
         );

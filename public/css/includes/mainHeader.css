@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
  
- .marginContainer #header{
+
+.marginContainer #header{
     background: black;
     color: white;
     display: grid;
@@ -41,7 +42,7 @@
  .marginContainer #header .headerLeft .logoMenu li:hover{
     cursor: pointer;
 }
-/* ========= MOBILE ============ */
+/* ======================= MOBILE HEADER ========================= */
 .marginContainer #header .headerLeft .mobileCartLeft{
     display: flex;
     flex-flow: row;
@@ -87,21 +88,27 @@
 }
 
 
-/* ========= MOBILE ============ */
+/* ======================= MOBILE HEADER ========================= */
 .marginContainer #header .headerRight .mobileCartRight{
     color: rgb(11,151,48);
-    font-size: 1.5rem;
-    visibility: hidden;
+    font-size: 1rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+.marginContainer #header .headerRight .mobileCartRight .fas{
+    padding: 1rem .5rem 1rem 1rem;
 }
 .marginContainer #header .headerRight .mobileCartRight .fa-shopping-cart{
-    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 
-/* ==================== MENU =================== */
+/* ==================== MOBILE MENU =================== */
 .marginContainer #header .headerRight .menuBtn{
     position: absolute;
-    visibility: hidden;
+    /* visibility: hidden; */
     font-size: 1.5rem;
     padding: .8rem;
     border: 1px white solid;
@@ -127,13 +134,9 @@
 }
 .marginContainer #header .leftMenu{
     left: 100vw;
-    /* visibility: hidden; */
-    display: none;
 }
 .marginContainer #header .rightMenu{
     left: 100vw;
-    /* visibility: hidden; */
-    display: none;
 }
 .marginContainer #header .rightMenu a{
     color: white;
@@ -167,30 +170,16 @@
 
 
     /* ==================== LEFT SIDE =================== */
-    .marginContainer #header .headerLeft h1{
-        visibility: hidden !important;
-        position: absolute !important;
+    .marginContainer #header .headerLeft .mainH1{
+        display: none;
     }
     .marginContainer #header .headerLeft .logoMenu{
-        visibility: hidden !important;
-        position: absolute !important;
+        display: none;
     }
     /* ========= MOBILE ============ */
     .marginContainer #header .headerLeft .mobileCartLeft{
         visibility: visible;
     }
-.marginContainer #header .headerLeft .mobileCartLeft a{
-    color: rgb(11,151,48);
-    font-family: 'Arizonia', cursive;
-    font-size: 4rem;
-    padding: 0 2rem 0 0;
-    cursor: pointer;
-    text-decoration: none;
-}
-    /* .marginContainer #header .headerLeft .mobileCartLeft a h1{
-        visibility: visible;
-        font-size: 2rem;
-    } */
    /* ========= MOBILE ============ */
 
    
@@ -209,4 +198,5 @@
         visibility: visible;
         margin-right: 1rem;
    }
+   
 }
