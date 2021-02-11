@@ -24,10 +24,11 @@ class App extends Component {
     return (
         <Router>
             <div>
+                {/* ================= HEADER(SHOWS ON EVERY PAGE) =================== */}
+                <MainHeader />
                 {/* =================THE MAIN PAGE=================== */}
-                <Route exact path="/">
+                <Route exact path='/'>
                     <div className="blackContainer">
-                        <MainHeader />
                         <JumboScreen />
                     </div>
                     <div className="whiteContainer">
@@ -44,10 +45,7 @@ class App extends Component {
                     <TakeIt />
                 </Route>
                 {/* =================THE TAKEOUT/DELIVERY PAGE=================== */}
-                <Route exact path="/:order">
-                    <div className="blackContainer">
-                        <MainHeader />
-                    </div>
+                <Route exact path='/:order'>
                     <OrderJumbo />
                     <Pickup />
                 </Route>

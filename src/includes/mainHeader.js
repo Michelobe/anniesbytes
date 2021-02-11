@@ -39,7 +39,7 @@ export default class MainHeader extends Component {
                         </ul>
                         {/* ============= MOBILE HEADER LEFT ============= */}
                         <div className="mobileCartLeft">
-                            <Link to='/'>
+                            <Link to={`/`}>
                                 <h1>AnniesBytes</h1>
                             </Link>
                         </div>
@@ -65,12 +65,12 @@ export default class MainHeader extends Component {
                     </div>
                     {/* ================================= MENU ACCORDIAN =========================== */}
                     <div className={`halfMenu leftMenu ${this.state.isActive ? 'active' : ''}`}>
-                        <p>Search</p>
-                        <p>Reserve</p>
+                        <p onClick={this.clickMenu}>Search</p>
+                        <p onClick={this.clickMenu}>Reserve</p>
                     </div>
                     <div className={`halfMenu rightMenu ${this.state.isActive ? 'active' : ''}`}>
-                        <p>Menu</p>
-                        <Link to="/:order">
+                        <p onClick={this.clickMenu}>Menu</p>
+                        <Link to="/order" onClick={this.clickMenu}>
                             <p>Store</p>
                         </Link>
                         <div className="exitBtn" onClick={this.clickMenu}>

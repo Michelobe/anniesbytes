@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
- 
+
 
 .marginContainer #header{
     background: black;
@@ -7,7 +7,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-size: .8rem;
-    letter-spacing: 1px;
     padding: 1rem 0;
     text-transform: capitalize;
     position: absolute;
@@ -102,13 +101,14 @@
 }
 .marginContainer #header .headerRight .mobileCartRight .fa-shopping-cart{
     margin-right: 1rem;
+    visibility: hidden;
 }
 
 
 /* ==================== MOBILE MENU =================== */
-.marginContainer #header .headerRight .menuBtn{
-    position: absolute;
-    /* visibility: hidden; */
+.marginContainer #header .menuBtn{
+    position: fixed;
+    visibility: hidden;
     font-size: 1.5rem;
     padding: .8rem;
     border: 1px white solid;
@@ -116,7 +116,7 @@
     color: white;
 }
 .marginContainer #header .halfMenu{
-    position: absolute;
+    position: fixed;
     background: blue;
     top: 0;
     z-index: 150;
@@ -184,13 +184,13 @@
 
    
 /* ==================== RIGHT SIDE =================== */
-    .marginContainer #header .headerRight{
-        position: absolute;
-    }
     .marginContainer #header .headerRight .orderMenu{
-        visibility: hidden;
+        display: none;
     }
    .marginContainer #header .headerRight .mobileCartRight{
+       visibility: visible;
+   }
+   .marginContainer #header .headerRight .mobileCartRight .fa-shopping-cart{
        visibility: visible;
    }
    .marginContainer #header .headerRight .menuBtn{
