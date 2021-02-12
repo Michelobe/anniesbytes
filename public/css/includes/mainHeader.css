@@ -46,12 +46,11 @@
     display: flex;
     flex-flow: row;
     align-items: center;
-    visibility: hidden;
+    display: none;
 }
 .marginContainer #header .headerLeft .mobileCartLeft a{
     color: rgb(11,151,48);
     font-family: 'Arizonia', cursive;
-    font-size: 4rem;
     padding: 0 2rem 0 0;
     cursor: pointer;
     text-decoration: none;
@@ -69,6 +68,7 @@
     display: flex;
     flex-flow: row;
     justify-content: space-around;
+    align-items: center;
 }
  .marginContainer #header .headerRight .orderMenu li{
     margin: 0 .45rem;
@@ -160,6 +160,24 @@
 }
 
 /* ================================ MEDIA QUERIES!!!! =============================== */
+/* ================================ IPAD PRO =============================== */
+@media only screen and (max-width: 800px) {
+    /* ==================== RIGHT SIDE =================== */
+    .marginContainer #header .headerRight .orderMenu{
+        justify-content: center;
+    }
+}
+
+
+/* ====================== IPHONE 6/7/8 PLUS HORIZONTAL =================== */
+@media only screen and (max-width: 750PX) {
+    /* ==================== RIGHT SIDE =================== */
+    .marginContainer #header .headerRight .orderMenu li{
+        padding: 0 1rem;
+        height: 2rem;
+    }
+}
+
 /* ============================ IPHONE 6/7/8 PLUS =========================== */
 @media only screen and (max-width: 450PX) {
     .marginContainer #header{
@@ -167,7 +185,7 @@
         flex-flow: row;
         align-items: center;
         position: static;
-        padding: 1.5rem 0;
+        padding: 1rem 0;
         width: 100%;
     }
 
@@ -181,7 +199,10 @@
     }
     /* ========= MOBILE ============ */
     .marginContainer #header .headerLeft .mobileCartLeft{
-        visibility: visible;
+        display: initial;
+    }
+    .marginContainer #header .headerLeft .mobileCartLeft a{
+        padding: 0;
     }
    /* ========= MOBILE ============ */
 

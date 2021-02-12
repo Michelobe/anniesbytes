@@ -25,7 +25,9 @@ class App extends Component {
         <Router>
             <div>
                 {/* ================= HEADER(SHOWS ON EVERY PAGE) =================== */}
-                <MainHeader />
+                <div className="blackContainer">
+                    <MainHeader />
+                </div>
                 {/* =================THE MAIN PAGE=================== */}
                 <Route exact path='/'>
                     <div className="blackContainer">
