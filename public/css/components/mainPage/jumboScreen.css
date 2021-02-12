@@ -84,7 +84,7 @@
 /* ============================ IPAD PRO =========================== */
 @media only screen and (max-width: 1050px) {
     .marginContainer #jumboScreen{
-        height: 71vh;
+        height: 50rem;
     }
     .marginContainer #jumboScreen .jumboInfo .jumboName h1{
         font-size: 6rem;
@@ -115,7 +115,10 @@
 
 
 /* =================================== IPAD ================================= */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
+    .marginContainer #jumboScreen{
+        height: 50rem;
+    }
     /* ==================== LEFT SIDE =================== */
      .marginContainer #jumboScreen .jumboLeft .jumboImg{
         height: 92%;
@@ -136,6 +139,23 @@
         height: 50rem;
     }
 }
+
+
+/* ====================== GALAXY S5 HORIZONTAL =================== */
+@media only screen and (max-width: 650PX) {
+    .marginContainer #jumboScreen {
+        height: 40rem;
+    }
+    /* ==================== LEFT SIDE =================== */
+    .marginContainer #jumboScreen .jumboInfo .jumboName h1{
+        font-size: 4rem;
+    }
+    /* ==================== RIGHT SIDE =================== */
+    .marginContainer #jumboScreen .jumboInfo{
+        padding-top: 4rem;
+    }
+}
+
 
 /* ============================ IPHONE 6/7/8 PLUS =========================== */
 @media only screen and (max-width: 450PX) {

@@ -57,19 +57,23 @@
 
 /* ================================ MEDIA QUERIES!!!! =============================== */
 /* ============================ IPAD =========================== */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
     .takeItContainer .whiteOverlay .marginContainer h1{
         font-size: 6rem;
     }
 }
 
 
-/* ============================ IPHONE 6/7/8 PLUS =========================== */
-@media only screen and (max-width: 450PX) {
+/* ====================== GALAXY S5 HORIZONTAL =================== */
+@media only screen and (max-width: 650PX) {
     .takeItContainer .whiteOverlay{
         padding: 0;
     }
     .takeItContainer .whiteOverlay .marginContainer h1{
         font-size: 3.5rem;
+    }
+    .takeItContainer .whiteOverlay .marginContainer .btnContainer .takeBtn{
+        font-size: 1.2rem;
+        padding: .7rem 1rem;
     }
 }

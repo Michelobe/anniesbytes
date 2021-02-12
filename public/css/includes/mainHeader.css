@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
 
-
 .marginContainer #header{
     background: black;
     color: white;
@@ -20,11 +19,12 @@
     justify-content: center;
     align-items: center;
 }
-.marginContainer #header .headerLeft h1{
+.marginContainer #header .headerLeft a{
     font-family: 'Arizonia', cursive;
     font-size: 2.5rem;
     padding: 0 1rem;
     color: rgb(11,151,48);
+    text-decoration: none;
 }
  .marginContainer #header .headerLeft .logoMenu{
     background: black;
@@ -69,6 +69,10 @@
     flex-flow: row;
     justify-content: space-around;
     align-items: center;
+}
+.marginContainer #header .headerRight .orderMenu a{
+    color: white;
+    text-decoration: none;
 }
  .marginContainer #header .headerRight .orderMenu li{
     margin: 0 .45rem;
@@ -170,13 +174,22 @@
 
 
 /* ====================== IPHONE 6/7/8 PLUS HORIZONTAL =================== */
-@media only screen and (max-width: 750PX) {
+@media only screen and (max-width: 825PX) {
     /* ==================== RIGHT SIDE =================== */
     .marginContainer #header .headerRight .orderMenu li{
         padding: 0 1rem;
         height: 2rem;
     }
 }
+
+
+/* ====================== GALAXY S5 HORIZONTAL =================== */
+@media only screen and (max-width: 650PX) {
+    .marginContainer #header .headerLeft .logoMenu :last-child{
+       display: none;
+   }
+}
+
 
 /* ============================ IPHONE 6/7/8 PLUS =========================== */
 @media only screen and (max-width: 450PX) {

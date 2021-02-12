@@ -30,7 +30,9 @@ export default class MainHeader extends Component {
                 <section id="header">
                     {/* <<<<<<<<<<<<<<<<<<<<<<<<< LEFT <<<<<<<<<<<<<<<<<<<<<<<<<<<< */}
                     <div className="headerLeft">
-                        <h1 className="mainH1">AB</h1>
+                        <Link to={`/`} className="mainH1">
+                            <h1>AB</h1>
+                        </Link>
                         <ul className="logoMenu">
                             <li>Menu</li>
                             <li>Catering</li>
@@ -51,8 +53,12 @@ export default class MainHeader extends Component {
                     {/* >>>>>>>>>>>>>>>>>>>>>>>>>> RIGHT >>>>>>>>>>>>>>>>>>>>>>>  */}
                     <div className="headerRight">
                         <ul className="orderMenu">
-                            <li>Pickup</li>
-                            <li>Delivery</li>
+                            <Link to={`/order`}>
+                                <li>Pickup</li>
+                            </Link>
+                            <Link to={`/order`}>
+                                <li>Delivery</li>
+                            </Link>
                             <li>Reserve</li>
                         </ul>
                         {/* ============= MOBILE HEADER RIGHT ============= */}

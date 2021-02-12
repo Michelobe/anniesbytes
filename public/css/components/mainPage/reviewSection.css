@@ -42,6 +42,15 @@
 
 
 /* ================================ MEDIA QUERIES!!!! =============================== */
+/* ====================== GALAXY S5 HORIZONTAL =================== */
+@media only screen and (max-width: 650PX) {
+    .blackContainer .marginContainer #reviewSection .boxContainer .reviewCompanyBox{
+        width: 8rem;
+        height: 8rem;
+    }
+}
+
+
 /* ============================ IPHONE 6/7/8 PLUS =========================== */
 @media only screen and (max-width: 450PX) {
     .blackContainer .marginContainer #reviewSection .boxContainer{

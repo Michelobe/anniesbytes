@@ -78,6 +78,22 @@
 }
 
 
+/* ====================== IPHONE 6/7/8 PLUS HORIZONTAL =================== */
+@media only screen and (max-width: 825PX) {
+    .marginContainer #cuisineDisplay .cuisineMenu .cuisineLi .cuisinePic{
+        height: 15rem;
+        width: 15rem;
+    }
+}
+
+/* ====================== GALAXY S5 HORIZONTAL =================== */
+@media only screen and (max-width: 650PX) {
+    .marginContainer #cuisineDisplay .cuisineMenu .cuisineLi .cuisinePic{
+        height: 13rem;
+        width: 13rem;
+    }
+}
+
 /* ============================ IPHONE 6/7/8 PLUS =========================== */
 @media only screen and (max-width: 450PX) {
     .marginContainer #cuisineDisplay .cuisineMenu{
