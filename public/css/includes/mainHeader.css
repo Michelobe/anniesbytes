@@ -125,7 +125,6 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    transition: all 1s ease-in-out;
 }
 .marginContainer #header .halfMenu p{
     height: 50vh;
@@ -134,9 +133,13 @@
 }
 .marginContainer #header .leftMenu{
     left: 100vw;
+    transition: all .7s ease-in-out;
+    display: none;
 }
 .marginContainer #header .rightMenu{
     left: 100vw;
+    transition: all .7s ease-in-out;
+    display: none;
 }
 .marginContainer #header .rightMenu a{
     color: white;
@@ -198,5 +201,10 @@
         visibility: visible;
         margin-right: 1rem;
    }
-   
+   .marginContainer #header .leftMenu{
+       display: initial;
+   }
+   .marginContainer #header .rightMenu{
+    display: initial;
+   }
 }
