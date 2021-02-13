@@ -12,6 +12,8 @@ import TakeIt from "./components/mainPage/takeItHome.js";
 // =============== PICKUP/TAKEOUT ================
 import OrderJumbo from "./components/deliveryTakeout/orderJumbo.js";
 import OrderOptions from "./components/deliveryTakeout/orderOptions.js";
+// ================== MENU ====================
+import Menu from "./components/menu/menu.js";
 // =============== FOOTER ================
 import Footer from "./includes/footer.js";
 
@@ -47,9 +49,13 @@ class App extends Component {
                     <TakeIt />
                 </Route>
                 {/* =================THE TAKEOUT/DELIVERY PAGE=================== */}
-                <Route exact path='/:order'>
+                <Route exact path='/order'>
                     <OrderJumbo />
                     <OrderOptions />
+                </Route>
+                {/* ================== MENU ==================== */}
+                <Route exact path='/menu'>
+                    <Menu />
                 </Route>
                 {/* ================= FOOTER(SHOWS ON EVERY PAGE) =================== */}
                 <div className="blackContainer">
