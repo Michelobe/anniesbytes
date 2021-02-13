@@ -10,15 +10,17 @@
     background: rgba(224, 223, 223, 0.219);
     margin-bottom: 2rem;
 }
-.orderOptions .deliveryOptions .marginContainer .deliveryInfo p{
+.orderOptions .deliveryOptions .marginContainer p{
+    margin: 0 auto;
+    max-width: 500px;
     padding-bottom: 1.5rem;
     font-size: .8rem;
     color: gray;
     letter-spacing: 1px;
 }
 .orderOptions .deliveryOptions .marginContainer .deliveryInfo input{
-    margin: 0 0 1.5rem 0;
-    padding: .8rem 0 .8rem 0;
+    margin: .5rem auto;
+    padding: .8rem 0;
     text-indent: 1rem;
     font-size: .8rem;
     color: rgb(206, 206, 206);
@@ -26,4 +28,22 @@
     width: 75%;
     border-radius: 5px;
     border: 1px solid rgb(206, 206, 206);
+}
+.orderOptions .deliveryOptions .marginContainer .deliveryInfo .submitBtn{
+    background: black;
+    color: white;
+    border-radius: 50px;
+    text-transform: capitalize;
+    margin: .5rem auto 0 auto;
+    text-align: center;
+    cursor: pointer;
+    min-width: 68px;
+    padding: 1rem 2rem;
+    height: 1rem;
+}
+.orderOptions .deliveryOptions .marginContainer .deliveryInfo .submitBtn p{
+    color: white;
+    font-size: .9rem;
+    font-weight: bold;
+    letter-spacing: 1px;
 }

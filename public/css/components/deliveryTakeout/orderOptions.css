@@ -57,26 +57,28 @@
     display: flex;
     flex-flow: row;
     align-items: center;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
 }
 .orderOptions .selectLoc .marginContainer .selectPick .selectBox{
+    background: white;
+    color: black;
     padding: 1rem 3rem;
-    background: red;
     text-transform: capitalize;
     font-size: 1rem;
     border: 1px solid rgba(128, 128, 128, 0.322);
     width: 50%;
     text-align: center;
+    cursor: pointer;
 }
-.orderOptions .selectLoc .marginContainer .selectPick .pickup{
+.orderOptions .selectLoc .marginContainer .selectPick .selectBox.active{
     background: black;
     color: white;
+}
+.orderOptions .selectLoc .marginContainer .selectPick .pickup{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 .orderOptions .selectLoc .marginContainer .selectPick .delivery{
-    background: white;
-    color: black;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }

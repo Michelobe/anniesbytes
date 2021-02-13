@@ -6,22 +6,37 @@ export default class OrderOptions extends Component{
     constructor(){
         super();
         this.state={
-            deliveryPickup: true
+            deliveryPickup: true,
+            pickUpActive: 'active',
+            deliveryActive: ''
         };
     }
 
     clickPickup =() => {
         if (this.state.deliveryPickup === false){
             this.setState({
-                deliveryPickup: true
+                deliveryPickup: true,
+                pickUpActive: 'active',
+                deliveryActive: ''
             })
         }
     }
     clickDelivery =() => {
         if (this.state.deliveryPickup === true){
             this.setState({
-                deliveryPickup: false
+                deliveryPickup: false,
+                pickUpActive: '',
+                deliveryActive: 'active'
             })
+        }
+    }
+
+    showH1 = () => {
+        if(this.state.deliveryPickup === true){
+            return(<h1>select pickup location</h1>);
+        }
+        else{
+            return(<h1>Enter Delivery Address</h1>);
         }
     }
 
@@ -47,23 +62,18 @@ export default class OrderOptions extends Component{
                 </div>
                 <div className="selectLoc">
                     <div className="marginContainer">
-                        <h1>select pickup location</h1>
+                        {this.showH1()}
                         <div className="selectPick">
-                            <div className="selectBox pickup" onClick={this.clickPickup}>
+                            <div className={`selectBox pickup ${this.state.pickUpActive}`} onClick={this.clickPickup}>
                                 <p>pickup</p>
                             </div>
-                            <div className="selectBox delivery"  onClick={this.clickDelivery}>
+                            <div className={`selectBox delivery ${this.state.deliveryActive}`}  onClick={this.clickDelivery}>
                                 <p>delivery</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                {/* ====================HACKY FIX, NEED TO REVISIT===================== */}
-                {this.state.deliveryPickup === true ? 
-                <Pickup /> : <Delivery />}
-                {/* ====================HACKY FIX, NEED TO REVISIT===================== */}
-                {/* <Pickup />
-                <Delivery /> */}
+                {this.state.deliveryPickup === true ? <Pickup /> : <Delivery />}
                 <div className="seeMenuBtn">
                     <p>See Menu</p>
                 </div>
