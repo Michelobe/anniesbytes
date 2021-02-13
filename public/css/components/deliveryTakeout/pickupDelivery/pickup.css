@@ -1,0 +1,59 @@
+.orderOptions .pickupOptions .marginContainer .pickupInfo{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.orderOptions .pickupOptions .marginContainer .pickupInfo p{
+    padding-bottom: 1.5rem;
+    font-size: .8rem;
+    color: gray;
+    letter-spacing: 1px;
+}
+.orderOptions .pickupOptions .marginContainer .pickupInfo input{
+    margin: 0 0 1.5rem 0;
+    padding: .8rem 0 .8rem 0;
+    text-indent: 1rem;
+    font-size: .8rem;
+    color: rgb(206, 206, 206);
+    letter-spacing: 2px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(206, 206, 206);
+}
+.orderOptions .pickupOptions .marginContainer .pickupInfo .storeLocation{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    border: 1px solid rgba(51, 51, 51, 0.507);
+    border-radius: 5px;
+    padding: 1.5rem 0;
+    background: rgba(224, 223, 223, 0.219);
+    margin-bottom: 2rem;
+}
+.orderOptions .pickupOptions .marginContainer .pickupInfo .storeLocation i{
+    padding: 0 1.2rem;
+}
+.orderOptions .pickupOptions .marginContainer .pickupInfo .storeLocation .storeInfo{
+    letter-spacing: 2px;
+}
+.orderOptions .pickupOptions .marginContainer .pickupInfo .storeLocation .storeInfo h6{
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+.orderOptions .pickupOptions .marginContainer .pickupInfo .storeLocation .storeInfo p{
+    font-size: .9rem;
+    padding-bottom: .5rem;
+    letter-spacing: 1px;
+}
+.orderOptions .pickupOptions .marginContainer .pickupInfo .storeLocation .storeInfo .closingInfo{
+    color: orange;
+}
+
+
+/* ============================ IPHONE 6/7/8 PLUS =========================== */
+@media only screen and (max-width: 450PX) {
+    .orderOptions .pickupOptions{
+        max-width: 385px;
+        margin: 0 auto;
+    }
+}

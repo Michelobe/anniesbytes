@@ -11,7 +11,9 @@
 @import "components/mainPage/takeItHome.css";
 /* =============== PICKUP/TAKEOUT ================ */
 @import "components/deliveryTakeout/orderJumbo.css";
-@import "components/deliveryTakeout/pickupOptions.css";
+@import "components/deliveryTakeout/orderOptions.css";
+@import "components/deliveryTakeout/pickupDelivery/delivery.css";
+@import "components/deliveryTakeout/pickupDelivery/pickup.css";
 /* =============== FOOTER ================ */
 @import "includes/footer.css";
 
@@ -27,6 +29,7 @@ body {
     width: 100%;
     background: black;
     margin: 0 auto;
+
 }
 /* ======================================================================= */
 
@@ -72,4 +75,9 @@ body {
 }
 
 
-/* ======================= IPHONE 6/7/8 PLUS ======================== */
+/* ============================ IPHONE 6/7/8 PLUS =========================== */
+@media only screen and (max-width: 450PX) {
+    .marginContainer{
+        max-width: 390px;
+    }
+}

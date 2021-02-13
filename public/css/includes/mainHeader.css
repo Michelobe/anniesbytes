@@ -8,7 +8,6 @@
     font-size: .8rem;
     padding: 1rem 0;
     text-transform: capitalize;
-    position: absolute;
     width: 97%;
     z-index: 100;
 }
@@ -95,7 +94,7 @@
 .marginContainer #header .headerRight .mobileCartRight{
     color: rgb(11,151,48);
     font-size: 1rem;
-    display: flex;
+    display: none;
     flex-flow: row;
     justify-content: center;
     align-items: center;
@@ -112,7 +111,7 @@
 /* ==================== MOBILE MENU =================== */
 .marginContainer #header .menuBtn{
     position: fixed;
-    visibility: hidden;
+    display: none;
     font-size: 1.5rem;
     padding: .8rem;
     border: 1px white solid;
@@ -136,12 +135,12 @@
     cursor: pointer;
 }
 .marginContainer #header .leftMenu{
-    left: 100vw;
+    left: 110vw;
     transition: all .7s ease-in-out;
     display: none;
 }
 .marginContainer #header .rightMenu{
-    left: 100vw;
+    left: 110vw;
     transition: all .7s ease-in-out;
     display: none;
 }
@@ -165,7 +164,7 @@
 
 /* ================================ MEDIA QUERIES!!!! =============================== */
 /* ================================ IPAD PRO =============================== */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1050px) {
     /* ==================== RIGHT SIDE =================== */
     .marginContainer #header .headerRight .orderMenu{
         justify-content: center;
@@ -225,14 +224,14 @@
         display: none;
     }
    .marginContainer #header .headerRight .mobileCartRight{
-       visibility: visible;
+       display: flex;
    }
    .marginContainer #header .headerRight .mobileCartRight .fa-shopping-cart{
        visibility: visible;
    }
    .marginContainer #header .headerRight .menuBtn{
         position: static;
-        visibility: visible;
+        display: initial;
         margin-right: 1rem;
    }
    .marginContainer #header .leftMenu{

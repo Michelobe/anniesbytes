@@ -1,14 +1,33 @@
 import React, {Component} from 'react';
+import Pickup from './pickupDelivery/pickup.js';
+import Delivery from './pickupDelivery/delivery.js';
 
-export default class Pickup extends Component{
+export default class OrderOptions extends Component{
     constructor(){
         super();
-        this.state={};
+        this.state={
+            deliveryPickup: true
+        };
+    }
+
+    clickPickup =() => {
+        if (this.state.deliveryPickup === false){
+            this.setState({
+                deliveryPickup: true
+            })
+        }
+    }
+    clickDelivery =() => {
+        if (this.state.deliveryPickup === true){
+            this.setState({
+                deliveryPickup: false
+            })
+        }
     }
 
     render(){
         return(
-            <div className="pickupOptions">
+            <div className='orderOptions'>
                 <div className="prepJumbo">
                     <div className="marginContainer">
                         <h1>Annie's Bytes</h1>
@@ -30,31 +49,23 @@ export default class Pickup extends Component{
                     <div className="marginContainer">
                         <h1>select pickup location</h1>
                         <div className="selectPick">
-                            <div className="selectBox pickup">
+                            <div className="selectBox pickup" onClick={this.clickPickup}>
                                 <p>pickup</p>
                             </div>
-                            <div className="selectBox delivery">
+                            <div className="selectBox delivery"  onClick={this.clickDelivery}>
                                 <p>delivery</p>
                             </div>
                         </div>
-                        <div className="pickupInfo">
-                            <p>Find the nearest store</p>
-                            <input type="text" id="loc" name="loc" placeholder="Search by city, state, or ZIP" />
-                            <div className="storeLocation">
-                                <i className="fas fa-dot-circle"></i>
-                                <div className="storeInfo">
-                                    <h6>Annie's Bytes</h6>
-                                    <p>1219 SW Park Ave</p>
-                                    <p>Portland, Oregon 97205</p>
-                                    <p className="closingInfo">Closing soon</p>
-                                    <p className="closingInfo">Open till 8:00pm</p>
-                                </div>
-                            </div>
-                            <div className="seeMenuBtn">
-                                <p>See Menu</p>
-                            </div>
-                        </div>
                     </div>
+                </div>
+                {/* ====================HACKY FIX, NEED TO REVISIT===================== */}
+                {this.state.deliveryPickup === true ? 
+                <Pickup /> : <Delivery />}
+                {/* ====================HACKY FIX, NEED TO REVISIT===================== */}
+                {/* <Pickup />
+                <Delivery /> */}
+                <div className="seeMenuBtn">
+                    <p>See Menu</p>
                 </div>
             </div>
         );

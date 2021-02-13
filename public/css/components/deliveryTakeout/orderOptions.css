@@ -1,0 +1,132 @@
+
+.orderOptions .prepJumbo{
+    color: gray;
+    border-bottom: 1px solid gray;
+    padding: 1.5rem 0;
+}
+.orderOptions .prepJumbo .marginContainer h1{
+    color: black;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+.orderOptions .prepJumbo .marginContainer .prepInfo{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    font-size: .8rem;
+    padding-bottom: 1rem;
+}
+.orderOptions .prepJumbo .marginContainer .prepInfo i{
+    padding: 0 .5rem;
+    font-size: .3rem;
+}
+.orderOptions .prepJumbo .marginContainer .pickupTime{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+.orderOptions .prepJumbo .marginContainer .pickupTime i{
+    padding-right: .5rem;
+    color: rgb(44, 32, 32);
+}
+.orderOptions .prepJumbo .marginContainer .pickupTime .timeChange{
+    padding-left: .5rem;
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(44, 32, 32);
+}
+
+/* ============================================================================== */
+.orderOptions .selectLoc{
+    padding: 1.5rem 0;
+}
+.orderOptions .selectLoc .marginContainer{
+    max-width: 500px;
+}
+.orderOptions .selectLoc .marginContainer h1{
+    font-size: 1.4rem;
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+.orderOptions .selectLoc .marginContainer .selectPick{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+.orderOptions .selectLoc .marginContainer .selectPick .selectBox{
+    padding: 1rem 3rem;
+    background: red;
+    text-transform: capitalize;
+    font-size: 1rem;
+    border: 1px solid rgba(128, 128, 128, 0.322);
+    width: 50%;
+    text-align: center;
+}
+.orderOptions .selectLoc .marginContainer .selectPick .pickup{
+    background: black;
+    color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.orderOptions .selectLoc .marginContainer .selectPick .delivery{
+    background: white;
+    color: black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.orderOptions .seeMenuBtn{
+    background: black;
+    color: white;
+    border-radius: 50px;
+    text-transform: capitalize;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    max-width: 100px;
+    margin-bottom: 2rem;
+    padding: 1rem ;
+}
+.orderOptions .seeMenuBtn p{
+    color: white;
+    font-size: .9rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* ================================ MEDIA QUERIES!!!! =============================== */
+/* ====================== IPHONE 6/7/8 PLUS HORIZONTAL =================== */
+@media only screen and (max-width: 750PX) {
+    .orderOptions .prepJumbo{
+        max-width: 685;
+        margin: 0 auto;
+    }
+}
+
+/* ============================ IPHONE 6/7/8 PLUS =========================== */
+@media only screen and (max-width: 450PX) {
+    .orderOptions .prepJumbo{
+        max-width: 385px;
+        margin: 0 auto;
+    }
+    .orderOptions .prepJumbo .marginContainer .prepInfo{
+        flex-flow: column;
+        align-items: flex-start;
+    }
+    .orderOptions .prepJumbo .marginContainer .prepInfo i{
+        visibility: hidden;
+    }
+    .orderOptions .selectLoc{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .orderOptions .selectLoc{
+        max-width: 385px;
+    }
+}

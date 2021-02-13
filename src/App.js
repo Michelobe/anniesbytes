@@ -11,7 +11,7 @@ import Reviews from "./components/mainPage/reviewSection.js";
 import TakeIt from "./components/mainPage/takeItHome.js";
 // =============== PICKUP/TAKEOUT ================
 import OrderJumbo from "./components/deliveryTakeout/orderJumbo.js";
-import Pickup from "./components/deliveryTakeout/pickupOptions.js";
+import OrderOptions from "./components/deliveryTakeout/orderOptions.js";
 // =============== FOOTER ================
 import Footer from "./includes/footer.js";
 
@@ -49,7 +49,7 @@ class App extends Component {
                 {/* =================THE TAKEOUT/DELIVERY PAGE=================== */}
                 <Route exact path='/:order'>
                     <OrderJumbo />
-                    <Pickup />
+                    <OrderOptions />
                 </Route>
                 {/* ================= FOOTER(SHOWS ON EVERY PAGE) =================== */}
                 <div className="blackContainer">
