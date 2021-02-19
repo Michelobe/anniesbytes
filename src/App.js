@@ -55,6 +55,7 @@ class App extends Component {
                 </Route>
                 {/* ================== MENU ==================== */}
                 <Route exact path='/menu'>
+                    <OrderJumbo />
                     <Menu />
                 </Route>
                 {/* ================= FOOTER(SHOWS ON EVERY PAGE) =================== */}

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 import Pickup from './pickupDelivery/pickup.js';
 import Delivery from './pickupDelivery/delivery.js';
 
@@ -75,7 +76,9 @@ export default class OrderOptions extends Component{
                 </div>
                 {this.state.deliveryPickup === true ? <Pickup /> : <Delivery />}
                 <div className="seeMenuBtn">
-                    <p>See Menu</p>
+                    <Link to={`/menu`}>
+                        <p>See Menu</p>
+                    </Link>
                 </div>
             </div>
         );

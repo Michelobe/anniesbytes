@@ -34,7 +34,9 @@ export default class MainHeader extends Component {
                             <h1>AB</h1>
                         </Link>
                         <ul className="logoMenu">
-                            <li>Menu</li>
+                            <Link to={`/menu`}>
+                                <li>Menu</li>
+                            </Link>
                             <li>Catering</li>
                             <li>Store</li>
                             <li>Gift Cards</li>
